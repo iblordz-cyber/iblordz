@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IBLORDZ - Creative Digital Studio offering AI content creation, animation, video production, music, design, YouTube services, websites and digital strategy.">
+  <meta name="author" content="IBLORDZ">
   <title>IBLORDZ | Creative Digital Studio</title>
-
-  <meta
-    name="description"
-    content="IBLORDZ is a creative digital studio offering AI content creation, animation, video production, music and visuals, creative design, social media content, YouTube expertise, websites and digital strategy."
-  />
-
-  <meta name="theme-color" content="#ffffff" />
 
   <style>
     :root {
@@ -38,19 +32,10 @@
     }
 
     body {
-      font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: var(--white);
       color: var(--black);
       line-height: 1.6;
-      overflow-x: hidden;
     }
 
     a {
@@ -59,29 +44,27 @@
     }
 
     button {
-      font: inherit;
+      font-family: inherit;
     }
 
     .container {
-      width: min(var(--max), calc(100% - 40px));
+      width: min(92%, var(--max));
       margin: auto;
     }
 
-    /* =========================
-       HEADER
-    ========================= */
+    /* ================= HEADER ================= */
 
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(255,255,255,0.94);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(0,0,0,0.06);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid var(--border);
     }
 
     .nav {
-      height: 78px;
+      height: 76px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -92,8 +75,6 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      font-weight: 900;
-      letter-spacing: -0.5px;
     }
 
     .brand-mark {
@@ -104,28 +85,23 @@
       color: var(--white);
       display: grid;
       place-items: center;
+      font-size: 14px;
       font-weight: 900;
-      font-size: 15px;
       letter-spacing: -1px;
     }
 
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.05;
-    }
-
-    .brand-name {
+    .brand-text strong {
+      display: block;
       font-size: 17px;
       letter-spacing: 1px;
     }
 
-    .brand-sub {
+    .brand-text span {
+      display: block;
       font-size: 9px;
-      color: #777;
-      letter-spacing: 1.7px;
-      margin-top: 4px;
-      font-weight: 700;
+      color: var(--gray);
+      letter-spacing: 1.8px;
+      margin-top: 1px;
     }
 
     nav {
@@ -138,71 +114,53 @@
       font-size: 13px;
       font-weight: 700;
       color: #444;
-      transition: 0.25s ease;
+      transition: 0.25s;
     }
 
     nav a:hover {
       color: #000;
     }
 
-    .nav-cta {
-      background: var(--black);
-      color: white !important;
-      padding: 12px 18px;
+    .nav-btn {
+      padding: 11px 18px;
       border-radius: 999px;
+      background: var(--black);
+      color: white;
     }
 
-    .nav-cta:hover {
-      background: #333;
+    .nav-btn:hover {
+      color: white;
+      opacity: 0.85;
     }
 
-    /* =========================
-       HERO
-    ========================= */
+    /* ================= HERO ================= */
 
     .hero {
-      min-height: calc(100vh - 78px);
-      display: flex;
-      align-items: center;
-      padding: 100px 0;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      border-radius: 50%;
-      background: radial-gradient(
-        circle,
-        rgba(0,0,0,0.06),
-        transparent 68%
-      );
-      top: -250px;
-      right: -180px;
-      pointer-events: none;
+      padding: 110px 0 90px;
+      background:
+        radial-gradient(circle at 85% 20%, #f2f2f2 0, transparent 30%),
+        radial-gradient(circle at 10% 80%, #f7f7f7 0, transparent 28%),
+        #fff;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 70px;
       align-items: center;
-      gap: 80px;
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      border: 1px solid var(--border);
-      background: #fff;
       padding: 8px 13px;
+      background: #f4f4f4;
+      border: 1px solid var(--border);
       border-radius: 999px;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 1.4px;
       text-transform: uppercase;
       margin-bottom: 24px;
     }
@@ -210,15 +168,15 @@
     .eyebrow-dot {
       width: 7px;
       height: 7px;
-      border-radius: 50%;
       background: #111;
+      border-radius: 50%;
     }
 
     .hero h1 {
-      font-size: clamp(48px, 7vw, 92px);
+      font-size: clamp(45px, 7vw, 82px);
       line-height: 0.98;
-      letter-spacing: -5px;
-      max-width: 900px;
+      letter-spacing: -4px;
+      max-width: 750px;
       margin-bottom: 28px;
     }
 
@@ -226,15 +184,15 @@
       color: #777;
     }
 
-    .hero-description {
+    .hero p {
       max-width: 650px;
-      font-size: 18px;
-      line-height: 1.75;
-      color: #5e5e5e;
-      margin-bottom: 35px;
+      font-size: 17px;
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 34px;
     }
 
-    .hero-buttons {
+    .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
@@ -244,13 +202,14 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 9px;
-      padding: 15px 22px;
+      gap: 8px;
+      padding: 14px 21px;
       border-radius: 999px;
+      border: 1px solid var(--black);
       font-size: 13px;
       font-weight: 800;
-      border: 1px solid var(--black);
-      transition: 0.25s ease;
+      transition: 0.25s;
+      cursor: pointer;
     }
 
     .btn-dark {
@@ -265,7 +224,7 @@
 
     .btn-light {
       background: white;
-      color: var(--black);
+      color: black;
       border-color: var(--border);
     }
 
@@ -274,153 +233,71 @@
       transform: translateY(-2px);
     }
 
-    .hero-card {
-      position: relative;
-    }
+    /* ================= HERO VIDEO ================= */
 
-    .hero-card-inner {
-      background: var(--black);
-      color: white;
-      min-height: 470px;
-      border-radius: 34px;
-      padding: 38px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .hero-card-inner::after {
-      content: "IB";
-      position: absolute;
-      right: -30px;
-      bottom: -75px;
-      font-size: 260px;
-      font-weight: 1000;
-      line-height: 1;
-      color: rgba(255,255,255,0.045);
-    }
-
-    .hero-card-label {
-      color: #aaa;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    .hero-card h2 {
-      font-size: 42px;
-      line-height: 1.05;
-      letter-spacing: -2px;
-      max-width: 390px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-card-bottom {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-stat {
-      border: 1px solid rgba(255,255,255,0.12);
-      padding: 18px;
-      border-radius: 17px;
-      background: rgba(255,255,255,0.04);
-    }
-
-    .hero-stat strong {
-      display: block;
-      font-size: 20px;
-      margin-bottom: 3px;
-    }
-
-    .hero-stat span {
-      color: #aaa;
-      font-size: 11px;
-    }
-
-    /* =========================
-       SECTIONS
-    ========================= */
-
-    .section {
-      padding: 110px 0;
-    }
-
-    .section-header {
-      max-width: 720px;
-      margin-bottom: 50px;
-    }
-
-    .section-kicker {
-      font-size: 11px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 1.7px;
-      color: #777;
-      margin-bottom: 14px;
-    }
-
-    .section-title {
-      font-size: clamp(36px, 5vw, 60px);
-      line-height: 1.05;
-      letter-spacing: -3px;
-      margin-bottom: 18px;
-    }
-
-    .section-description {
-      color: #686868;
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    /* =========================
-       VIDEO / WORK
-    ========================= */
-
-    .work-section {
-      background: var(--soft);
-      border-top: 1px solid #f0f0f0;
-      border-bottom: 1px solid #f0f0f0;
-    }
-
-    .video-wrapper {
+    .hero-video {
       background: #111;
       border-radius: 28px;
-      overflow: hidden;
+      padding: 10px;
       box-shadow: var(--shadow);
-      aspect-ratio: 16 / 9;
     }
 
-    .video-wrapper iframe {
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      border-radius: 20px;
+      background: #000;
+    }
+
+    .video-frame iframe {
       width: 100%;
       height: 100%;
       border: 0;
-      display: block;
     }
 
-    .work-footer {
+    /* ================= SECTION ================= */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-head {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      margin-top: 22px;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 45px;
     }
 
-    .work-footer p {
+    .section-label {
       color: #777;
-      font-size: 13px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
     }
 
-    /* =========================
-       SERVICES
-    ========================= */
+    .section-head h2 {
+      font-size: clamp(32px, 5vw, 54px);
+      letter-spacing: -2.5px;
+      line-height: 1;
+    }
+
+    .section-head p {
+      max-width: 430px;
+      color: var(--gray);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    /* ================= SERVICES ================= */
+
+    #services {
+      background: var(--soft);
+    }
 
     .services-grid {
       display: grid;
@@ -429,102 +306,309 @@
     }
 
     .service-card {
-      display: flex;
-      flex-direction: column;
-      min-height: 340px;
+      position: relative;
+      min-height: 320px;
       padding: 30px;
+      background: white;
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      background: white;
-      transition: 0.3s ease;
       cursor: pointer;
-      position: relative;
+      transition: 0.3s ease;
+      display: flex;
+      flex-direction: column;
       overflow: hidden;
     }
 
+    .service-card::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      right: -60px;
+      bottom: -60px;
+      background: #f5f5f5;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
     .service-card:hover {
-      transform: translateY(-7px);
-      border-color: #cfcfcf;
-      box-shadow: 0 18px 45px rgba(0,0,0,0.07);
+      transform: translateY(-6px);
+      border-color: #ccc;
+      box-shadow: var(--shadow);
+    }
+
+    .service-card:hover::after {
+      transform: scale(1.4);
     }
 
     .service-number {
-      font-size: 11px;
-      color: #999;
-      font-weight: 900;
-      letter-spacing: 1px;
-      margin-bottom: 30px;
-    }
-
-    .service-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: #111;
-      color: white;
+      width: 40px;
+      height: 40px;
       display: grid;
       place-items: center;
+      background: #f3f3f3;
+      border-radius: 12px;
+      font-size: 11px;
       font-weight: 900;
-      font-size: 13px;
-      margin-bottom: 25px;
+      margin-bottom: 26px;
     }
 
     .service-card h3 {
-      font-size: 22px;
-      line-height: 1.15;
-      letter-spacing: -0.8px;
-      margin-bottom: 13px;
+      font-size: 21px;
+      letter-spacing: -0.7px;
+      margin-bottom: 12px;
     }
 
     .service-card p {
-      color: #777;
+      color: var(--gray);
       font-size: 13px;
-      line-height: 1.7;
+      line-height: 1.75;
       margin-bottom: 20px;
     }
 
-    .starting-price {
+    .price-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
       margin-top: auto;
       padding-top: 18px;
       border-top: 1px solid #eee;
-      font-size: 12px;
-      color: #777;
+      position: relative;
+      z-index: 2;
     }
 
-    .starting-price strong {
+    .price-preview span {
+      padding: 7px 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 999px;
+      background: #fafafa;
+      color: #666;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .price-preview strong {
       color: #111;
-      font-size: 18px;
-      margin-left: 4px;
     }
 
     .service-link {
-      display: inline-block;
-      margin-top: 14px;
-      color: #111;
+      display: block;
+      margin-top: 15px;
       font-size: 11px;
       font-weight: 900;
       letter-spacing: 0.5px;
-      transition: 0.25s ease;
+      position: relative;
+      z-index: 3;
     }
 
-    .service-card:hover .service-link {
-      transform: translateX(5px);
+    /* ================= YOUTUBE ================= */
+
+    .youtube-section {
+      background: var(--black);
+      color: white;
     }
 
-    /* =========================
-       PRICING MODAL
-    ========================= */
+    .youtube-section .section-label {
+      color: #999;
+    }
+
+    .youtube-section .section-head p {
+      color: #aaa;
+    }
+
+    .youtube-box {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .youtube-copy h2 {
+      font-size: clamp(34px, 5vw, 60px);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+    }
+
+    .youtube-copy p {
+      color: #aaa;
+      line-height: 1.8;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .youtube-video {
+      background: #222;
+      padding: 8px;
+      border-radius: 24px;
+    }
+
+    .youtube-video .video-frame {
+      border-radius: 18px;
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 80px;
+    }
+
+    .about-title h2 {
+      font-size: clamp(35px, 5vw, 58px);
+      line-height: 1;
+      letter-spacing: -3px;
+    }
+
+    .about-content p {
+      color: var(--gray);
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 22px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .stat {
+      padding: 22px;
+      background: var(--soft);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: var(--gray);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    #contact {
+      background: var(--soft);
+    }
+
+    .contact-box {
+      background: #111;
+      color: white;
+      border-radius: 30px;
+      padding: 65px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .contact-box h2 {
+      font-size: clamp(34px, 5vw, 58px);
+      letter-spacing: -3px;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .contact-box p {
+      max-width: 600px;
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 190px;
+    }
+
+    .contact-actions .btn-light {
+      border: 0;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      padding: 35px 0;
+      background: white;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .copyright {
+      color: #777;
+      font-size: 11px;
+    }
+
+    .socials {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .socials a {
+      font-size: 11px;
+      font-weight: 800;
+      color: #555;
+    }
+
+    .socials a:hover {
+      color: #000;
+    }
+
+    /* ================= WHATSAPP FLOAT ================= */
+
+    .whatsapp-float {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      width: 58px;
+      height: 58px;
+      background: #111;
+      color: white;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      z-index: 900;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+      font-size: 12px;
+      font-weight: 900;
+      transition: 0.25s;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.04);
+    }
+
+    /* ================= MODAL ================= */
 
     .modal {
       position: fixed;
       inset: 0;
       z-index: 2000;
+      background: rgba(0,0,0,0.72);
+      backdrop-filter: blur(8px);
       display: none;
       align-items: center;
       justify-content: center;
       padding: 20px;
-      background: rgba(0,0,0,0.65);
-      backdrop-filter: blur(10px);
     }
 
     .modal.active {
@@ -532,74 +616,97 @@
     }
 
     .modal-box {
-      width: min(1100px, 100%);
-      max-height: 92vh;
+      width: min(1050px, 100%);
+      max-height: 90vh;
       overflow-y: auto;
       background: white;
       border-radius: 28px;
-      padding: 34px;
-      position: relative;
-      box-shadow: 0 40px 100px rgba(0,0,0,0.25);
+      box-shadow: 0 30px 100px rgba(0,0,0,0.3);
+      padding: 35px;
+      animation: modalIn 0.25s ease;
     }
 
-    .modal-close {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 40px;
-      height: 40px;
-      border: 1px solid #ddd;
-      background: white;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 18px;
-      z-index: 5;
-    }
-
-    .modal-close:hover {
-      background: #111;
-      color: white;
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.98);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
     }
 
     .modal-header {
-      padding-right: 55px;
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      align-items: flex-start;
       margin-bottom: 30px;
     }
 
-    .modal-header small {
-      text-transform: uppercase;
-      color: #888;
+    .modal-label {
       font-size: 10px;
-      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
       font-weight: 900;
+      color: #888;
+      margin-bottom: 8px;
     }
 
     .modal-header h2 {
-      font-size: 40px;
-      line-height: 1.05;
+      font-size: clamp(28px, 4vw, 44px);
       letter-spacing: -2px;
-      margin: 7px 0 10px;
+      line-height: 1;
     }
 
     .modal-header p {
       color: #777;
-      font-size: 14px;
+      font-size: 13px;
+      margin-top: 10px;
+      max-width: 650px;
+    }
+
+    .close-modal {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: white;
+      cursor: pointer;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .close-modal:hover {
+      background: #f3f3f3;
     }
 
     .pricing-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+      gap: 16px;
     }
 
+    /* CLICKABLE PACKAGE */
+
     .price-card {
-      border: 1px solid #e5e5e5;
-      border-radius: 20px;
-      padding: 25px;
+      position: relative;
+      padding: 27px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: #fff;
       display: flex;
       flex-direction: column;
-      min-height: 390px;
-      background: #fff;
+      min-height: 450px;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    .price-card:hover {
+      transform: translateY(-5px);
+      border-color: #111;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.1);
     }
 
     .price-card.featured {
@@ -608,54 +715,56 @@
       border-color: #111;
     }
 
+    .price-card.featured:hover {
+      box-shadow: 0 20px 55px rgba(0,0,0,0.25);
+    }
+
     .price-top {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 16px;
+      align-items: center;
+      margin-bottom: 18px;
     }
 
     .package-name {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      font-size: 11px;
       font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
     }
 
     .popular {
-      background: white;
-      color: #111;
-      border-radius: 999px;
-      padding: 5px 9px;
       font-size: 8px;
       font-weight: 900;
-      letter-spacing: .7px;
+      padding: 6px 8px;
+      border-radius: 999px;
+      background: white;
+      color: #111;
     }
 
     .price {
-      font-size: 40px;
-      font-weight: 900;
-      letter-spacing: -2px;
+      font-size: 38px;
       line-height: 1;
-      margin-bottom: 6px;
+      letter-spacing: -2px;
+      font-weight: 900;
+      margin-bottom: 8px;
     }
 
     .delivery {
+      color: #777;
       font-size: 11px;
-      color: #888;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
-    .featured .delivery {
+    .price-card.featured .delivery {
       color: #aaa;
     }
 
     .includes-title {
       font-size: 10px;
       text-transform: uppercase;
-      font-weight: 900;
       letter-spacing: 1px;
+      font-weight: 900;
       margin-bottom: 10px;
     }
 
@@ -666,27 +775,26 @@
 
     .price-card li {
       position: relative;
-      padding-left: 17px;
+      padding-left: 18px;
+      font-size: 11px;
       color: #666;
-      font-size: 12px;
-      line-height: 1.55;
-      margin-bottom: 8px;
+      margin-bottom: 9px;
+      line-height: 1.5;
+    }
+
+    .price-card.featured li {
+      color: #ccc;
     }
 
     .price-card li::before {
       content: "✓";
       position: absolute;
       left: 0;
-      top: 0;
-      color: #111;
       font-weight: 900;
+      color: #111;
     }
 
-    .featured li {
-      color: #ccc;
-    }
-
-    .featured li::before {
+    .price-card.featured li::before {
       color: white;
     }
 
@@ -699,371 +807,110 @@
 
     .price-btn {
       width: 100%;
-      padding: 12px;
+      padding: 13px;
       border-radius: 999px;
-      text-align: center;
       border: 1px solid #111;
       background: #111;
       color: white;
       font-size: 11px;
       font-weight: 900;
       cursor: pointer;
+      transition: 0.2s;
     }
 
     .price-btn:hover {
       background: #333;
     }
 
-    .sample-btn {
-      width: 100%;
-      padding: 12px;
-      border-radius: 999px;
-      text-align: center;
-      border: 1px solid #ddd;
+    .price-card.featured .price-btn {
       background: white;
       color: #111;
-      font-size: 11px;
+      border-color: white;
+    }
+
+    .price-card.featured .price-btn:hover {
+      background: #ddd;
+    }
+
+    .sample-btn {
+      width: 100%;
+      padding: 11px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: white;
+      color: #111;
+      font-size: 10px;
       font-weight: 900;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .price-card.featured .sample-btn {
+      background: transparent;
+      color: white;
+      border-color: #444;
     }
 
     .sample-btn:hover {
       border-color: #111;
     }
 
-    .featured .price-btn {
-      background: white;
-      color: #111;
-      border-color: white;
-    }
-
-    .featured .sample-btn {
-      background: transparent;
-      color: white;
-      border-color: #555;
-    }
-
-    /* =========================
-       YOUTUBE EXPERT
-    ========================= */
-
-    .youtube-section {
-      background: #111;
-      color: white;
-    }
-
-    .youtube-section .section-kicker {
-      color: #aaa;
-    }
-
-    .youtube-section .section-description {
-      color: #aaa;
-    }
-
-    .youtube-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .youtube-section .section-title {
-      max-width: 650px;
-    }
-
-    .youtube-features {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    .youtube-feature {
-      border: 1px solid rgba(255,255,255,0.13);
-      border-radius: 17px;
-      padding: 19px;
-      background: rgba(255,255,255,0.035);
-    }
-
-    .youtube-feature strong {
-      display: block;
-      font-size: 13px;
-      margin-bottom: 5px;
-    }
-
-    .youtube-feature span {
-      color: #999;
-      font-size: 11px;
-    }
-
-    .youtube-box {
-      border-radius: 26px;
-      padding: 34px;
-      border: 1px solid rgba(255,255,255,0.13);
-      background: rgba(255,255,255,0.045);
-    }
-
-    .youtube-box .yt-icon {
-      width: 60px;
-      height: 60px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: white;
-      color: #111;
-      font-size: 20px;
-      font-weight: 900;
-      margin-bottom: 25px;
-    }
-
-    .youtube-box h3 {
-      font-size: 26px;
-      line-height: 1.1;
-      margin-bottom: 14px;
-    }
-
-    .youtube-box p {
-      color: #aaa;
-      font-size: 13px;
-      line-height: 1.7;
-      margin-bottom: 25px;
-    }
-
-    /* =========================
-       ABOUT
-    ========================= */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 90px;
-      align-items: start;
-    }
-
-    .about-label {
-      font-size: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-    }
-
-    .about-text {
-      font-size: 24px;
-      line-height: 1.5;
-      letter-spacing: -0.7px;
-      margin-bottom: 25px;
-    }
-
-    .about-small {
-      color: #777;
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
-    .about-points {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-top: 35px;
-    }
-
-    .about-point {
-      padding: 22px;
-      background: var(--soft);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-    }
-
-    .about-point strong {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 13px;
-    }
-
-    .about-point span {
-      font-size: 11px;
-      color: #777;
-    }
-
-    /* =========================
-       CONTACT
-    ========================= */
-
-    .contact-section {
-      background: var(--soft);
-      border-top: 1px solid #eee;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .contact-text {
-      color: #777;
-      font-size: 16px;
-      line-height: 1.8;
-      max-width: 570px;
-    }
-
-    .contact-links {
-      display: grid;
-      gap: 10px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 20px;
-      border: 1px solid var(--border);
-      background: white;
-      border-radius: 18px;
-      transition: 0.25s ease;
-    }
-
-    .contact-item:hover {
-      transform: translateX(5px);
-      border-color: #bbb;
-    }
-
-    .contact-item-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #999;
-      font-weight: 900;
-      margin-bottom: 4px;
-    }
-
-    .contact-item-value {
-      font-size: 13px;
-      font-weight: 800;
-      word-break: break-word;
-    }
-
-    .contact-arrow {
-      font-size: 18px;
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      background: #111;
-      color: white;
-      padding: 55px 0 30px;
-    }
-
-    .footer-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 50px;
-      padding-bottom: 45px;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-
-    .footer-brand {
-      max-width: 400px;
-    }
-
-    .footer-brand h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .footer-brand p {
+    .click-note {
+      text-align: center;
       color: #888;
-      font-size: 12px;
-      line-height: 1.7;
-    }
-
-    .social-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      align-items: flex-start;
-      justify-content: flex-end;
-    }
-
-    .social-links a {
-      border: 1px solid rgba(255,255,255,0.14);
-      padding: 10px 14px;
-      border-radius: 999px;
-      color: #bbb;
       font-size: 10px;
-      font-weight: 800;
-      transition: 0.25s ease;
+      margin-top: 22px;
     }
 
-    .social-links a:hover {
-      color: white;
-      border-color: white;
-    }
+    /* ================= RESPONSIVE ================= */
 
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding-top: 25px;
-      color: #666;
-      font-size: 10px;
-    }
-
-    /* =========================
-       FLOATING WHATSAPP
-    ========================= */
-
-    .floating-whatsapp {
-      position: fixed;
-      right: 22px;
-      bottom: 22px;
-      width: 58px;
-      height: 58px;
-      background: #111;
-      color: white;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      z-index: 1500;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-      font-size: 19px;
-      font-weight: 900;
-      transition: 0.25s ease;
-    }
-
-    .floating-whatsapp:hover {
-      transform: scale(1.08);
-      background: #333;
-    }
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 950px) {
-      .hero-grid,
-      .youtube-grid,
-      .about-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 80px 0;
-      }
-
-      .hero-card {
-        max-width: 650px;
-      }
-
+    @media (max-width: 1000px) {
       .services-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
+      .hero-grid,
+      .youtube-box,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 75px;
+      }
+
+      .youtube-copy {
+        max-width: 700px;
+      }
+
+      .contact-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        display: none;
+      }
+
+      .hero h1 {
+        letter-spacing: -2.5px;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head p {
+        margin-top: 18px;
+      }
+
+      .services-grid,
       .pricing-grid {
         grid-template-columns: 1fr;
       }
@@ -1072,130 +919,43 @@
         min-height: auto;
       }
 
-      .youtube-grid {
-        gap: 40px;
-      }
-
-      .about-grid {
-        gap: 40px;
-      }
-
-      .contact-grid {
-        gap: 40px;
-      }
-    }
-
-    @media (max-width: 700px) {
-      .container {
-        width: min(var(--max), calc(100% - 28px));
-      }
-
-      .nav {
-        height: 68px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .hero {
-        min-height: auto;
-        padding: 70px 0 80px;
-      }
-
-      .hero h1 {
-        font-size: 52px;
-        letter-spacing: -3px;
-      }
-
-      .hero-description {
-        font-size: 15px;
-      }
-
-      .hero-card-inner {
-        min-height: 390px;
-        padding: 28px;
-      }
-
-      .hero-card h2 {
-        font-size: 34px;
-      }
-
-      .section {
-        padding: 75px 0;
-      }
-
-      .section-title {
-        font-size: 38px;
-        letter-spacing: -2px;
-      }
-
-      .services-grid {
+      .stats {
         grid-template-columns: 1fr;
       }
 
-      .service-card {
-        min-height: 310px;
-      }
-
-      .work-footer {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .youtube-features {
-        grid-template-columns: 1fr;
-      }
-
-      .about-points {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-top,
-      .footer-bottom {
-        flex-direction: column;
-      }
-
-      .social-links {
-        justify-content: flex-start;
+      .contact-box {
+        padding: 40px 25px;
       }
 
       .modal-box {
-        padding: 24px 17px;
+        padding: 22px;
         border-radius: 22px;
       }
 
-      .modal-header h2 {
-        font-size: 32px;
-      }
-
-      .price-card {
-        padding: 22px;
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
 
-    @media (max-width: 450px) {
-      .hero h1 {
-        font-size: 44px;
+    @media (max-width: 480px) {
+      .hero {
+        padding: 60px 0;
       }
 
-      .hero-buttons {
-        flex-direction: column;
+      .hero p {
+        font-size: 14px;
       }
 
-      .hero-buttons .btn {
-        width: 100%;
+      .service-card {
+        padding: 24px;
       }
 
-      .hero-card-bottom {
-        grid-template-columns: 1fr;
-      }
-
-      .floating-whatsapp {
+      .whatsapp-float {
         width: 52px;
         height: 52px;
-        right: 15px;
-        bottom: 15px;
+        right: 16px;
+        bottom: 16px;
       }
     }
   </style>
@@ -1203,9 +963,7 @@
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+  <!-- ================= HEADER ================= -->
 
   <header>
     <div class="container nav">
@@ -1214,25 +972,18 @@
         <div class="brand-mark">IB</div>
 
         <div class="brand-text">
-          <div class="brand-name">IBLORDZ</div>
-          <div class="brand-sub">CREATIVE DIGITAL STUDIO</div>
+          <strong>IBLORDZ</strong>
+          <span>CREATIVE DIGITAL STUDIO</span>
         </div>
       </a>
 
       <nav>
         <a href="#home">Home</a>
-        <a href="#work">Work</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-
-        <a
-          class="nav-cta"
-          href="https://wa.me/2348072749790?text=Hello%20IBLORDZ%2C%20I%27d%20like%20to%20discuss%20a%20project."
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Start a Project
+        <a href="https://wa.me/2348072749790" target="_blank" class="nav-btn">
+          WhatsApp
         </a>
       </nav>
 
@@ -1240,83 +991,55 @@
   </header>
 
 
-  <main>
+  <!-- ================= HERO ================= -->
 
-    <!-- =========================
-         HERO
-    ========================= -->
+  <main>
 
     <section class="hero" id="home">
       <div class="container hero-grid">
 
         <div>
+
           <div class="eyebrow">
             <span class="eyebrow-dot"></span>
             Creative Digital Studio
           </div>
 
           <h1>
-            Turning
-            <span>Ideas</span>
-            Into Impact.
+            Turning Ideas
+            <span>Into Impact.</span>
           </h1>
 
-          <p class="hero-description">
-            I’m IBLORDZ, a creative digital professional focused on
-            transforming ideas into engaging content, visual experiences,
-            innovative digital solutions, and powerful creative projects.
+          <p>
+            I’m a creative digital professional focused on transforming ideas
+            into engaging content, visual experiences, and innovative digital
+            solutions. I combine creativity, technology, storytelling, and
+            design to help brands, creators, and businesses bring their ideas
+            to life.
           </p>
 
-          <div class="hero-buttons">
-
-            <a
-              href="#services"
-              class="btn btn-dark"
-            >
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-dark">
               Explore Services →
             </a>
 
-            <a
-              href="https://wa.me/2348072749790?text=Hello%20IBLORDZ%2C%20I%27d%20like%20to%20discuss%20a%20project."
-              class="btn btn-light"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Talk on WhatsApp
+            <a href="https://wa.me/2348072749790" target="_blank" class="btn btn-light">
+              Start a Project
             </a>
-
           </div>
+
         </div>
 
 
-        <div class="hero-card">
+        <div class="hero-video">
 
-          <div class="hero-card-inner">
-
-            <div>
-              <div class="hero-card-label">
-                IBLORDZ / CREATIVE STUDIO
-              </div>
-            </div>
-
-            <h2>
-              Creative work built to connect, engage and stand out.
-            </h2>
-
-            <div class="hero-card-bottom">
-
-              <div class="hero-stat">
-                <strong>9+</strong>
-                <span>Creative Services</span>
-              </div>
-
-              <div class="hero-stat">
-                <strong>MANY YEARS</strong>
-                <span>Creative Experience</span>
-              </div>
-
-            </div>
-
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/nfLRgbx9Y7Q"
+              title="IBLORDZ Featured Work"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
           </div>
 
         </div>
@@ -1325,87 +1048,22 @@
     </section>
 
 
-    <!-- =========================
-         FEATURED WORK
-    ========================= -->
+    <!-- ================= SERVICES ================= -->
 
-    <section class="section work-section" id="work">
+    <section id="services">
 
       <div class="container">
 
-        <div class="section-header">
+        <div class="section-head">
 
-          <div class="section-kicker">
-            Featured Work
+          <div>
+            <div class="section-label">What I Do</div>
+            <h2>Creative Services</h2>
           </div>
-
-          <h2 class="section-title">
-            See the creative side of IBLORDZ.
-          </h2>
-
-          <p class="section-description">
-            Explore a featured project and request additional samples
-            directly through WhatsApp.
-          </p>
-
-        </div>
-
-        <div class="video-wrapper">
-
-          <iframe
-            src="https://www.youtube.com/embed/nfLRgbx9Y7Q"
-            title="IBLORDZ Featured Work"
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
-
-        </div>
-
-        <div class="work-footer">
 
           <p>
-            More samples are available on request.
-          </p>
-
-          <a
-            href="https://wa.me/2348072749790?text=Hello%20IBLORDZ%2C%20I%27d%20like%20to%20see%20your%20portfolio%20and%20more%20samples."
-            class="btn btn-dark"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Request More Samples →
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         SERVICES
-    ========================= -->
-
-    <section class="section" id="services">
-
-      <div class="container">
-
-        <div class="section-header">
-
-          <div class="section-kicker">
-            Services
-          </div>
-
-          <h2 class="section-title">
-            Creative services for modern brands and creators.
-          </h2>
-
-          <p class="section-description">
-            Choose a service below to view the Basic, Standard and Premium
-            packages. Every package includes a clear scope, delivery time
-            and direct WhatsApp contact.
+            Select a service to explore the available packages, pricing,
+            delivery time, and project options.
           </p>
 
         </div>
@@ -1413,272 +1071,219 @@
 
         <div class="services-grid">
 
-          <!-- SERVICE 1 -->
 
-          <div
-            class="service-card"
-            onclick="openService('ai')"
-          >
+          <!-- 01 AI CONTENT -->
+
+          <div class="service-card" onclick="openService('ai')">
 
             <div class="service-number">01</div>
-
-            <div class="service-icon">AI</div>
 
             <h3>AI Content Creation</h3>
 
             <p>
-              AI-powered videos, creative visuals, storytelling,
-              characters, talking objects and innovative digital content.
+              AI-powered videos, creative visuals, storytelling, AI characters,
+              talking objects, talking fruit, AI art and innovative digital content.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$40</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$40</strong></span>
+              <span>Standard <strong>$80</strong></span>
+              <span>Premium <strong>$150</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
 
-          <!-- SERVICE 2 -->
+          <!-- 02 ANIMATION -->
 
-          <div
-            class="service-card"
-            onclick="openService('animation')"
-          >
+          <div class="service-card" onclick="openService('animation')">
 
             <div class="service-number">02</div>
-
-            <div class="service-icon">AN</div>
 
             <h3>Animation</h3>
 
             <p>
-              Character animation, cartoon animation, 3D animation,
-              kids animation, animated stories and lip-sync projects.
+              Character animation, cartoon animation, 3D animation, kids animation,
+              animated stories, lip-sync animation and creative visual projects.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$50</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$50</strong></span>
+              <span>Standard <strong>$100</strong></span>
+              <span>Premium <strong>$200</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
 
-          <!-- SERVICE 3 -->
+          <!-- 03 VIDEO -->
 
-          <div
-            class="service-card"
-            onclick="openService('editing')"
-          >
+          <div class="service-card" onclick="openService('video')">
 
             <div class="service-number">03</div>
-
-            <div class="service-icon">VE</div>
 
             <h3>Video Production & Editing</h3>
 
             <p>
-              Professional editing for short-form content, promotional
-              content, music projects, cinematic content and storytelling.
+              Video editing, short-form content, promotional content, cinematic
+              videos, music videos, storytelling, lyric content and motion graphics.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$35</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$35</strong></span>
+              <span>Standard <strong>$75</strong></span>
+              <span>Premium <strong>$150</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
 
-          <!-- SERVICE 4 -->
+          <!-- 04 MUSIC -->
 
-          <div
-            class="service-card"
-            onclick="openService('music')"
-          >
+          <div class="service-card" onclick="openService('music')">
 
             <div class="service-number">04</div>
-
-            <div class="service-icon">MU</div>
 
             <h3>Music & Visuals</h3>
 
             <p>
-              Music production, composition, arrangement, orchestration,
-              music visuals, lyric content and cinematic experiences.
+              Music production, composition, arrangement, orchestral music,
+              music visuals, lyric content, cinematic scenes and music production.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$50</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$50</strong></span>
+              <span>Standard <strong>$100</strong></span>
+              <span>Premium <strong>$200</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
 
-          <!-- SERVICE 5 -->
+          <!-- 05 DESIGN -->
 
-          <div
-            class="service-card"
-            onclick="openService('design')"
-          >
+          <div class="service-card" onclick="openService('design')">
 
             <div class="service-number">05</div>
-
-            <div class="service-icon">CR</div>
 
             <h3>Creative Design</h3>
 
             <p>
-              Creative graphics, thumbnails, promotional designs,
-              branding visuals and professional digital assets.
+              Creative graphics, branding visuals, thumbnails, promotional designs,
+              digital assets and visual content designed to help brands stand out.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$30</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$30</strong></span>
+              <span>Standard <strong>$60</strong></span>
+              <span>Premium <strong>$120</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
 
-          <!-- SERVICE 6 -->
+          <!-- 06 SOCIAL -->
 
-          <div
-            class="service-card"
-            onclick="openService('social')"
-          >
+          <div class="service-card" onclick="openService('social')">
 
             <div class="service-number">06</div>
-
-            <div class="service-icon">SM</div>
 
             <h3>Social Media Content</h3>
 
             <p>
-              TikTok videos, Instagram Reels, YouTube Shorts and
-              engaging short-form content for social platforms.
+              TikTok videos, Instagram Reels, YouTube Shorts, promotional content,
+              social media creatives and engaging short-form content.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$30</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$30</strong></span>
+              <span>Standard <strong>$70</strong></span>
+              <span>Premium <strong>$130</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
 
-          <!-- SERVICE 7 -->
+          <!-- 07 YOUTUBE -->
 
-          <div
-            class="service-card"
-            onclick="openService('youtube')"
-          >
+          <div class="service-card" onclick="openService('youtube')">
 
             <div class="service-number">07</div>
-
-            <div class="service-icon">YT</div>
 
             <h3>YouTube Expert</h3>
 
             <p>
-              YouTube content, editing, optimization, thumbnails,
-              titles, Shorts strategy, faceless content and channel planning.
+              YouTube channel development, content strategy, optimization,
+              thumbnails, titles, descriptions, Shorts and audience-focused content.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$50</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$50</strong></span>
+              <span>Standard <strong>$120</strong></span>
+              <span>Premium <strong>$250</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
 
-          <!-- SERVICE 8 -->
+          <!-- 08 WEBSITE -->
 
-          <div
-            class="service-card"
-            onclick="openService('website')"
-          >
+          <div class="service-card" onclick="openService('website')">
 
             <div class="service-number">08</div>
-
-            <div class="service-icon">WEB</div>
 
             <h3>Website & Digital Solutions</h3>
 
             <p>
-              Website design and development, WordPress, Shopify,
-              landing pages and creative digital experiences.
+              Website design and development, WordPress, Shopify, landing pages,
+              creative websites and technology-driven digital experiences.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$100</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$100</strong></span>
+              <span>Standard <strong>$250</strong></span>
+              <span>Premium <strong>$500</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
 
-          <!-- SERVICE 9 -->
+          <!-- 09 STRATEGY -->
 
-          <div
-            class="service-card"
-            onclick="openService('strategy')"
-          >
+          <div class="service-card" onclick="openService('strategy')">
 
             <div class="service-number">09</div>
-
-            <div class="service-icon">DS</div>
 
             <h3>Content & Digital Strategy</h3>
 
             <p>
-              Content planning, creative direction, storytelling,
-              content calendars and audience-focused digital strategy.
+              Content planning, creative direction, storytelling, digital strategy,
+              brand-focused media and audience-focused recommendations.
             </p>
 
-            <div class="starting-price">
-              Starting from
-              <strong>$40</strong>
+            <div class="price-preview">
+              <span>Basic <strong>$40</strong></span>
+              <span>Standard <strong>$80</strong></span>
+              <span>Premium <strong>$150</strong></span>
             </div>
 
-            <span class="service-link">
-              View Packages →
-            </span>
+            <span class="service-link">View Packages →</span>
 
           </div>
 
@@ -1689,139 +1294,106 @@
     </section>
 
 
-    <!-- =========================
-         YOUTUBE EXPERT
-    ========================= -->
+    <!-- ================= YOUTUBE EXPERT ================= -->
 
-    <section class="section youtube-section">
+    <section class="youtube-section">
 
-      <div class="container youtube-grid">
+      <div class="container youtube-box">
 
-        <div>
+        <div class="youtube-copy">
 
-          <div class="section-kicker">
-            YouTube Expert
-          </div>
+          <div class="section-label">YouTube Specialist</div>
 
-          <h2 class="section-title">
-            Build better content for YouTube.
+          <h2>
+            Build Better.
+            Grow Smarter.
           </h2>
 
-          <p class="section-description">
-            From video editing and thumbnails to SEO-focused optimization,
-            Shorts strategy and content planning, I help creators and brands
-            create a stronger YouTube presence.
-          </p>
-
-          <div class="youtube-features">
-
-            <div class="youtube-feature">
-              <strong>Video Editing</strong>
-              <span>Professional long-form and short-form content.</span>
-            </div>
-
-            <div class="youtube-feature">
-              <strong>SEO Optimization</strong>
-              <span>Titles, descriptions and channel-focused optimization.</span>
-            </div>
-
-            <div class="youtube-feature">
-              <strong>Thumbnails</strong>
-              <span>Creative visuals designed to attract attention.</span>
-            </div>
-
-            <div class="youtube-feature">
-              <strong>Content Strategy</strong>
-              <span>Ideas and planning built around your audience.</span>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="youtube-box">
-
-          <div class="yt-icon">
-            ▶
-          </div>
-
-          <h3>
-            Need help with your YouTube channel?
-          </h3>
-
           <p>
-            Tell me about your channel, content goals and what you want
-            to improve. I'll help you choose the right service package.
+            From content planning and editing to SEO optimization, thumbnails,
+            Shorts strategy and channel direction, I help creators and brands
+            develop professional YouTube content designed around their goals.
           </p>
 
-          <a
-            href="https://wa.me/2348072749790?text=Hello%20IBLORDZ%2C%20I%27m%20interested%20in%20your%20YouTube%20Expert%20service."
-            class="btn btn-light"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Discuss YouTube Project →
+          <a href="#services" class="btn btn-light">
+            View YouTube Packages →
           </a>
 
         </div>
 
+
+        <div class="youtube-video">
+
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/nfLRgbx9Y7Q"
+              title="IBLORDZ YouTube Work"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+
       </div>
 
     </section>
 
 
-    <!-- =========================
-         ABOUT
-    ========================= -->
+    <!-- ================= ABOUT ================= -->
 
-    <section class="section" id="about">
+    <section id="about">
 
       <div class="container about-grid">
 
-        <div>
+        <div class="about-title">
 
-          <div class="about-label">
-            About IBLORDZ
-          </div>
+          <div class="section-label">About IBLORDZ</div>
+
+          <h2>
+            Creativity With
+            Purpose.
+          </h2>
 
         </div>
 
 
-        <div>
+        <div class="about-content">
 
-          <p class="about-text">
-            I’m a creative digital professional focused on transforming
-            ideas into engaging content, visual experiences, and innovative
-            digital solutions.
+          <p>
+            I’m a creative digital professional focused on transforming ideas
+            into engaging content, visual experiences, and innovative digital
+            solutions. I combine creativity, technology, storytelling, and design
+            to help brands, creators, and businesses bring their ideas to life.
           </p>
 
-          <p class="about-small">
-            I combine creativity, technology, storytelling, and design
-            to help brands, creators, and businesses bring their ideas
-            to life.
+          <p>
+            I’m passionate about creating work that is creative, professional,
+            engaging, and purposeful. Whether you need content, animation, music,
+            design, YouTube support, or a complete digital solution, I’m ready
+            to bring your vision to life.
           </p>
 
-          <div class="about-points">
+          <p>
+            Let’s create something remarkable together.
+          </p>
 
-            <div class="about-point">
-              <strong>Creative</strong>
-              <span>Original ideas built around your vision.</span>
+
+          <div class="stats">
+
+            <div class="stat">
+              <strong>MANY</strong>
+              <span>Years Experience</span>
             </div>
 
-            <div class="about-point">
-              <strong>Professional</strong>
-              <span>Focused on quality and polished delivery.</span>
+            <div class="stat">
+              <strong>9+</strong>
+              <span>Creative Services</span>
             </div>
 
-            <div class="about-point">
-              <strong>Engaging</strong>
-              <span>Content designed to capture attention.</span>
-            </div>
-
-            <div class="about-point">
-              <strong>Purposeful</strong>
-              <span>Creative work built around your goals.</span>
+            <div class="stat">
+              <strong>∞</strong>
+              <span>Creative Possibilities</span>
             </div>
 
           </div>
@@ -1833,103 +1405,48 @@
     </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
+    <!-- ================= CONTACT ================= -->
 
-    <section class="section contact-section" id="contact">
+    <section id="contact">
 
-      <div class="container contact-grid">
+      <div class="container">
 
-        <div>
+        <div class="contact-box">
 
-          <div class="section-kicker">
-            Let's Work Together
+          <div>
+
+            <div class="section-label">Let's Work Together</div>
+
+            <h2>
+              Have An Idea?
+              Let's Create It.
+            </h2>
+
+            <p>
+              Tell me what you're working on and what you need. I'll help you
+              choose the right service and package for your project.
+            </p>
+
           </div>
 
-          <h2 class="section-title">
-            Have an idea?
-            Let's create it.
-          </h2>
 
-          <p class="contact-text">
-            Whether you need content, animation, music, design, YouTube
-            support, social media content, a website or a complete digital
-            solution, I'm ready to bring your vision to life.
-          </p>
-
-          <div style="margin-top:28px;">
+          <div class="contact-actions">
 
             <a
-              href="https://wa.me/2348072749790?text=Hello%20IBLORDZ%2C%20I%27d%20like%20to%20start%20a%20project."
-              class="btn btn-dark"
+              href="https://wa.me/2348072749790"
               target="_blank"
-              rel="noopener noreferrer"
-            >
-              Start a Conversation →
+              class="btn btn-light">
+              WhatsApp Me →
+            </a>
+
+            <a
+              href="mailto:iamiblordz@gmail.com"
+              class="btn"
+              style="color:white;border-color:#444;">
+              Email Me
             </a>
 
           </div>
-
-        </div>
-
-
-        <div class="contact-links">
-
-          <a
-            class="contact-item"
-            href="https://wa.me/2348072749790"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <div class="contact-item-label">
-                WhatsApp
-              </div>
-
-              <div class="contact-item-value">
-                +234 807 274 9790
-              </div>
-            </div>
-
-            <div class="contact-arrow">→</div>
-          </a>
-
-
-          <a
-            class="contact-item"
-            href="mailto:iamiblordz@gmail.com"
-          >
-            <div>
-              <div class="contact-item-label">
-                Email
-              </div>
-
-              <div class="contact-item-value">
-                iamiblordz@gmail.com
-              </div>
-            </div>
-
-            <div class="contact-arrow">→</div>
-          </a>
-
-
-          <a
-            class="contact-item"
-            href="tel:+2348068683302"
-          >
-            <div>
-              <div class="contact-item-label">
-                Phone
-              </div>
-
-              <div class="contact-item-value">
-                +234 806 868 3302
-              </div>
-            </div>
-
-            <div class="contact-arrow">→</div>
-          </a>
 
         </div>
 
@@ -1940,85 +1457,41 @@
   </main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+  <!-- ================= FOOTER ================= -->
 
   <footer>
 
-    <div class="container">
+    <div class="container footer-inner">
 
-      <div class="footer-top">
-
-        <div class="footer-brand">
-
-          <h2>IBLORDZ</h2>
-
-          <p>
-            Creative Digital Studio delivering AI content, animation,
-            video production, music, design, social media content,
-            YouTube solutions, websites and digital strategy.
-          </p>
-
-        </div>
-
-
-        <div class="social-links">
-
-          <a
-            href="https://www.instagram.com/iblordzbuz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-
-          <a
-            href="https://www.tiktok.com/@iblordzbuz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            TikTok
-          </a>
-
-          <a
-            href="https://www.facebook.com/profile.php?id=61593351377959"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Facebook
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/adewale-ibrahim-29483a417"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-
-          <a
-            href="https://www.youtube.com/watch?v=nfLRgbx9Y7Q"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            YouTube
-          </a>
-
-        </div>
-
+      <div class="copyright">
+        © 2026 IBLORDZ. All rights reserved.
       </div>
 
+      <div class="socials">
 
-      <div class="footer-bottom">
+        <a href="https://www.instagram.com/iblordzbuz" target="_blank">
+          Instagram
+        </a>
 
-        <span>
-          © 2026 IBLORDZ. All rights reserved.
-        </span>
+        <a href="https://www.tiktok.com/@iblordzbuz" target="_blank">
+          TikTok
+        </a>
 
-        <span>
-          Creative Digital Studio
-        </span>
+        <a
+          href="https://www.facebook.com/profile.php?id=61593351377959"
+          target="_blank">
+          Facebook
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/adewale-ibrahim-29483a417"
+          target="_blank">
+          LinkedIn
+        </a>
+
+        <a href="mailto:iamiblordz@gmail.com">
+          Email
+        </a>
 
       </div>
 
@@ -2027,91 +1500,70 @@
   </footer>
 
 
-  <!-- =========================
-       FLOATING WHATSAPP
-  ========================= -->
+  <!-- ================= FLOATING WHATSAPP ================= -->
 
   <a
-    class="floating-whatsapp"
-    href="https://wa.me/2348072749790?text=Hello%20IBLORDZ%2C%20I%27m%20interested%20in%20your%20services."
+    href="https://wa.me/2348072749790"
     target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contact IBLORDZ on WhatsApp"
-  >
+    class="whatsapp-float"
+    aria-label="Chat on WhatsApp">
     WA
   </a>
 
 
-  <!-- =========================
-       PRICING MODAL
-  ========================= -->
+  <!-- ================= PRICING MODAL ================= -->
 
-  <div
-    class="modal"
-    id="pricingModal"
-    onclick="closeOutside(event)"
-  >
+  <div class="modal" id="pricingModal">
 
     <div class="modal-box">
 
-      <button
-        class="modal-close"
-        onclick="closeModal()"
-        aria-label="Close"
-      >
-        ×
-      </button>
-
       <div class="modal-header">
 
-        <small id="modalKicker">
-          Service Packages
-        </small>
+        <div>
+          <div class="modal-label">Choose Your Package</div>
+          <h2 id="modalTitle">Service Packages</h2>
+          <p id="modalDescription">
+            Select a package below to continue on WhatsApp.
+          </p>
+        </div>
 
-        <h2 id="modalTitle">
-          Service
-        </h2>
-
-        <p id="modalDescription">
-          Choose the package that fits your project.
-        </p>
+        <button class="close-modal" onclick="closeModal()" aria-label="Close">
+          ×
+        </button>
 
       </div>
 
-      <div
-        class="pricing-grid"
-        id="pricingGrid"
-      ></div>
+
+      <div class="pricing-grid" id="pricingGrid"></div>
+
+      <div class="click-note">
+        Click your preferred package to continue directly to WhatsApp.
+      </div>
 
     </div>
 
   </div>
 
 
-  <!-- =========================
-       JAVASCRIPT
-  ========================= -->
+  <!-- ================= JAVASCRIPT ================= -->
 
   <script>
 
     const whatsappNumber = "2348072749790";
+
 
     const services = {
 
       ai: {
         title: "AI Content Creation",
         description:
-          "AI-powered videos, creative visuals, storytelling, AI characters and innovative digital content.",
-        sample:
-          "https://drive.google.com/file/d/1kdAIZOvxdOzMQ2A6t1a9K94hZWsouDln/view?usp=drive_link",
+          "AI-powered videos, creative visuals, storytelling, AI characters, talking objects, talking fruit, AI art and innovative digital content.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$40",
             delivery: "3 Days",
-            featured: false,
             items: [
               "1 AI video",
               "Up to 30 seconds",
@@ -2121,11 +1573,9 @@
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$80",
             delivery: "5 Days",
-            featured: true,
             items: [
               "3 AI videos",
               "Up to 60 seconds each",
@@ -2136,11 +1586,9 @@
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$150",
             delivery: "7 Days",
-            featured: false,
             items: [
               "6 AI videos",
               "Up to 60 seconds each",
@@ -2152,24 +1600,23 @@
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/1kdAIZOvxdOzMQ2A6t1a9K94hZWsouDln/view?usp=drive_link"
       },
 
 
       animation: {
         title: "Animation",
         description:
-          "Character animation, cartoon animation, 3D animation, kids animation, animated stories and lip-sync projects.",
-        sample:
-          "https://drive.google.com/file/d/1XC0PjJA6wY2gBMqFWz_3xgC_05eWEI3d/view?usp=sharing",
+          "Character animation, cartoon animation, 3D animation, kids animation, animated stories, lip-sync animation and creative visual projects.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$50",
             delivery: "4 Days",
-            featured: false,
             items: [
               "1 animated video",
               "Up to 30 seconds",
@@ -2179,26 +1626,22 @@
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$100",
             delivery: "6 Days",
-            featured: true,
             items: [
               "1 animated video",
               "Up to 60 seconds",
-              "Up to 2 characters",
+              "2 characters",
               "Lip-sync",
               "Custom scenes",
               "Sound effects"
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$200",
             delivery: "10 Days",
-            featured: false,
             items: [
               "1 animated video",
               "Up to 2 minutes",
@@ -2210,24 +1653,23 @@
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/1XC0PjJA6wY2gBMqFWz_3xgC_05eWEI3d/view?usp=sharing"
       },
 
 
-      editing: {
+      video: {
         title: "Video Production & Editing",
         description:
-          "Professional editing for short-form content, promotional content, music projects, cinematic content and storytelling.",
-        sample:
-          "https://drive.google.com/file/d/1ZiHkF4JsgVM54LgyfSeFyTaQfQ0qfRbW/view?usp=drive_link",
+          "Professional video editing, short-form content, promotional content, cinematic videos, music videos, storytelling, lyric content and motion graphics.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$35",
             delivery: "3 Days",
-            featured: false,
             items: [
               "1 short video",
               "Up to 30 seconds",
@@ -2235,15 +1677,13 @@
               "Transitions",
               "Basic captions",
               "Music",
-              "1080p output"
+              "1080p"
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$75",
             delivery: "5 Days",
-            featured: true,
             items: [
               "5 short videos",
               "Up to 60 seconds each",
@@ -2254,41 +1694,38 @@
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$150",
             delivery: "7 Days",
-            featured: false,
             items: [
               "12 short videos",
               "Up to 60 seconds each",
               "Advanced captions",
               "Motion graphics",
-              "Creative transitions",
-              "Sound effects",
+              "Transitions",
+              "SFX",
               "Color grading",
-              "1080p output"
+              "1080p"
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/1ZiHkF4JsgVM54LgyfSeFyTaQfQ0qfRbW/view?usp=drive_link"
       },
 
 
       music: {
         title: "Music & Visuals",
         description:
-          "Music production, composition, arrangement, orchestration, music visuals, lyric content and cinematic experiences.",
-        sample:
-          "https://drive.google.com/file/d/1ma07HBC6Ha_dV2w3hXbBulik6A_7s8dx/view?usp=sharing",
+          "Music production, composition, arrangement, orchestral music, music visuals, lyric content, cinematic scenes and music production.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$50",
             delivery: "4 Days",
-            featured: false,
             items: [
               "1 music track",
               "Up to 2 minutes",
@@ -2297,13 +1734,11 @@
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$100",
             delivery: "6 Days",
-            featured: true,
             items: [
-              "1 music track",
+              "1 track",
               "Up to 4 minutes",
               "Professional arrangement",
               "Orchestral / instrumental elements",
@@ -2311,40 +1746,36 @@
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$200",
             delivery: "10 Days",
-            featured: false,
             items: [
               "1 complete track",
               "Up to 6 minutes",
               "Advanced composition",
               "Orchestration",
               "Detailed arrangement",
-              "Mixing",
-              "Mastering"
+              "Mixing & mastering"
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/1ma07HBC6Ha_dV2w3hXbBulik6A_7s8dx/view?usp=sharing"
       },
 
 
       design: {
         title: "Creative Design",
         description:
-          "Creative graphics, thumbnails, promotional designs, branding visuals and professional digital assets.",
-        sample:
-          "https://drive.google.com/file/d/1FCj-d0h5izmmScgNd-jFS8Q2n_YNEdMM/view?usp=sharing",
+          "Creative graphics, branding visuals, thumbnails, promotional designs, digital assets and visual content designed to help brands stand out.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$30",
             delivery: "2 Days",
-            featured: false,
             items: [
               "2 creative designs",
               "Social posts / thumbnails",
@@ -2353,11 +1784,9 @@
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$60",
             delivery: "4 Days",
-            featured: true,
             items: [
               "5 designs",
               "Thumbnails / social graphics",
@@ -2366,11 +1795,9 @@
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$120",
             delivery: "6 Days",
-            featured: false,
             items: [
               "10 professional designs",
               "Thumbnails",
@@ -2380,24 +1807,23 @@
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/1FCj-d0h5izmmScgNd-jFS8Q2n_YNEdMM/view?usp=sharing"
       },
 
 
       social: {
         title: "Social Media Content",
         description:
-          "TikTok videos, Instagram Reels, YouTube Shorts and engaging short-form content for social platforms.",
-        sample:
-          "https://drive.google.com/file/d/10QoQTO_9l1qMoLau4Y3eToVL95vexfRF/view?usp=sharing",
+          "TikTok videos, Instagram Reels, YouTube Shorts, promotional content, social media creatives and engaging short-form content.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$30",
             delivery: "3 Days",
-            featured: false,
             items: [
               "3 short videos",
               "Up to 30 seconds each",
@@ -2407,11 +1833,9 @@
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$70",
             delivery: "5 Days",
-            featured: true,
             items: [
               "7 short videos",
               "Up to 60 seconds each",
@@ -2422,11 +1846,9 @@
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$130",
             delivery: "7 Days",
-            featured: false,
             items: [
               "12 short videos",
               "Up to 60 seconds each",
@@ -2438,24 +1860,23 @@
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/10QoQTO_9l1qMoLau4Y3eToVL95vexfRF/view?usp=sharing"
       },
 
 
       youtube: {
         title: "YouTube Expert",
         description:
-          "YouTube content, editing, optimization, thumbnails, titles, Shorts strategy, faceless content and channel planning.",
-        sample:
-          "https://drive.google.com/file/d/1A8NNFarm1JfRHFvRoqzTkazsQmgCi2lC/view?usp=sharing",
+          "YouTube channel development, content strategy, optimization, thumbnails, titles, descriptions, Shorts and audience-focused content.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$50",
             delivery: "3 Days",
-            featured: false,
             items: [
               "1 YouTube video",
               "Up to 5 minutes",
@@ -2466,31 +1887,26 @@
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$120",
             delivery: "5 Days",
-            featured: true,
             items: [
               "3 YouTube videos",
               "Up to 8 minutes each",
-              "Video editing",
+              "Editing",
               "SEO optimization",
               "Thumbnails",
-              "Titles",
-              "Descriptions"
+              "Titles & descriptions"
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$250",
             delivery: "10 Days",
-            featured: false,
             items: [
               "6 YouTube videos",
               "Up to 10 minutes each",
-              "Video editing",
+              "Editing",
               "SEO optimization",
               "Thumbnails",
               "Shorts strategy",
@@ -2498,24 +1914,23 @@
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/1A8NNFarm1JfRHFvRoqzTkazsQmgCi2lC/view?usp=sharing"
       },
 
 
       website: {
         title: "Website & Digital Solutions",
         description:
-          "Website design and development, WordPress, Shopify, landing pages and creative digital experiences.",
-        sample:
-          "https://drive.google.com/file/d/1E4o5k7-RjehZox20VOi4e2XXAuS5GKN7/view?usp=sharing",
+          "Website design and development, WordPress, Shopify, landing pages, creative websites and technology-driven digital experiences.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$100",
             delivery: "5 Days",
-            featured: false,
             items: [
               "1-page website",
               "Responsive design",
@@ -2524,11 +1939,9 @@
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$250",
             delivery: "7 Days",
-            featured: true,
             items: [
               "Up to 5 pages",
               "Responsive design",
@@ -2538,11 +1951,9 @@
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$500",
             delivery: "14 Days",
-            featured: false,
             items: [
               "Up to 10 pages",
               "Advanced design",
@@ -2554,24 +1965,23 @@
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/1E4o5k7-RjehZox20VOi4e2XXAuS5GKN7/view?usp=sharing"
       },
 
 
       strategy: {
         title: "Content & Digital Strategy",
         description:
-          "Content planning, creative direction, storytelling, content calendars and audience-focused digital strategy.",
-        sample:
-          "https://drive.google.com/file/d/1WvzXcBMX8gA3srVcZdw3z9jIiZcF2geA/view?usp=sharing",
+          "Content planning, creative direction, storytelling, digital strategy, brand-focused media and audience-focused recommendations.",
 
-        packages: [
+        packages: {
 
-          {
-            name: "Basic",
+          Basic: {
             price: "$40",
             delivery: "3 Days",
-            featured: false,
             items: [
               "15 content ideas",
               "Audience research",
@@ -2579,11 +1989,9 @@
             ]
           },
 
-          {
-            name: "Standard",
+          Standard: {
             price: "$80",
             delivery: "5 Days",
-            featured: true,
             items: [
               "30-day content plan",
               "30 content ideas",
@@ -2592,11 +2000,9 @@
             ]
           },
 
-          {
-            name: "Premium",
+          Premium: {
             price: "$150",
             delivery: "7 Days",
-            featured: false,
             items: [
               "60-day content strategy",
               "60 content ideas",
@@ -2607,15 +2013,16 @@
             ]
           }
 
-        ]
+        },
+
+        sample:
+          "https://drive.google.com/file/d/1WvzXcBMX8gA3srVcZdw3z9jIiZcF2geA/view?usp=sharing"
       }
 
     };
 
 
-    /* =========================
-       OPEN SERVICE
-    ========================= */
+    /* ================= OPEN SERVICE ================= */
 
     function openService(serviceKey) {
 
@@ -2623,86 +2030,89 @@
 
       if (!service) return;
 
-      const modal = document.getElementById("pricingModal");
-      const title = document.getElementById("modalTitle");
-      const description = document.getElementById("modalDescription");
-      const grid = document.getElementById("pricingGrid");
+      document.getElementById("modalTitle").textContent = service.title;
 
-      title.textContent = service.title;
-      description.textContent = service.description;
+      document.getElementById("modalDescription").textContent =
+        service.description +
+        " Select a package below to continue.";
+
+      const grid = document.getElementById("pricingGrid");
 
       grid.innerHTML = "";
 
-      service.packages.forEach((pkg, index) => {
+
+      const packageNames = Object.keys(service.packages);
+
+
+      packageNames.forEach((packageName, index) => {
+
+        const pkg = service.packages[packageName];
 
         const card = document.createElement("div");
 
         card.className =
           "price-card" +
-          (pkg.featured ? " featured" : "");
+          (index === 1 ? " featured" : "");
 
-        const message =
-          "Hello IBLORDZ, I'm interested in the " +
-          pkg.name +
-          " package for your " +
-          service.title +
-          " service. I'd like to discuss my project.";
 
-        const whatsappLink =
-          "https://wa.me/" +
-          whatsappNumber +
-          "?text=" +
-          encodeURIComponent(message);
+        const popular =
+          index === 1
+            ? '<span class="popular">MOST POPULAR</span>'
+            : "";
+
+
+        const itemsHTML = pkg.items
+          .map(item => `<li>${item}</li>`)
+          .join("");
+
 
         card.innerHTML = `
 
           <div class="price-top">
 
-            <div class="package-name">
-              ${pkg.name}
-            </div>
+            <span class="package-name">
+              ${packageName}
+            </span>
 
-            ${
-              pkg.featured
-                ? '<span class="popular">POPULAR</span>'
-                : ''
-            }
+            ${popular}
 
           </div>
+
 
           <div class="price">
             ${pkg.price}
           </div>
 
+
           <div class="delivery">
             Delivery: ${pkg.delivery}
           </div>
 
+
           <div class="includes-title">
-            Includes
+            Package Includes
           </div>
 
+
           <ul>
-            ${pkg.items.map(item => `<li>${item}</li>`).join("")}
+            ${itemsHTML}
           </ul>
+
 
           <div class="price-actions">
 
-            <a
+            <button
               class="price-btn"
-              href="${whatsappLink}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Choose ${pkg.name} →
-            </a>
+              onclick="event.stopPropagation(); choosePackage('${service.title}', '${packageName}', '${pkg.price}')">
+              Choose ${packageName} →
+            </button>
+
 
             <a
               class="sample-btn"
               href="${service.sample}"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              onclick="event.stopPropagation();">
               View Sample
             </a>
 
@@ -2710,19 +2120,55 @@
 
         `;
 
+
+        /* CLICK ENTIRE PACKAGE CARD */
+
+        card.addEventListener("click", function() {
+
+          choosePackage(
+            service.title,
+            packageName,
+            pkg.price
+          );
+
+        });
+
+
         grid.appendChild(card);
 
       });
 
-      modal.classList.add("active");
+
+      document
+        .getElementById("pricingModal")
+        .classList.add("active");
+
 
       document.body.style.overflow = "hidden";
+
     }
 
 
-    /* =========================
-       CLOSE MODAL
-    ========================= */
+    /* ================= CHOOSE PACKAGE ================= */
+
+    function choosePackage(
+      serviceTitle,
+      packageName,
+      price
+    ) {
+
+      const message =
+        `Hello IBLORDZ, I'm interested in the ${serviceTitle} - ${packageName} Package (${price}). I'd like to discuss the project details.`;
+
+      const url =
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+      window.open(url, "_blank");
+
+    }
+
+
+    /* ================= CLOSE MODAL ================= */
 
     function closeModal() {
 
@@ -2735,21 +2181,20 @@
     }
 
 
-    function closeOutside(event) {
+    /* ================= CLICK OUTSIDE ================= */
 
-      if (
-        event.target ===
-        document.getElementById("pricingModal")
-      ) {
-        closeModal();
-      }
+    document
+      .getElementById("pricingModal")
+      .addEventListener("click", function(event) {
 
-    }
+        if (event.target === this) {
+          closeModal();
+        }
+
+      });
 
 
-    /* =========================
-       ESCAPE KEY
-    ========================= */
+    /* ================= ESC KEY ================= */
 
     document.addEventListener("keydown", function(event) {
 
