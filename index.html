@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="IBLORDZ - Creative Digital Studio offering AI content creation, animation, video production, music, design, YouTube services, websites and digital strategy.">
-  <meta name="author" content="IBLORDZ">
+
+  <meta name="description" content="IBLORDZ Creative Digital Studio - AI content, animation, video editing, music, design, YouTube, websites and digital strategy.">
+
   <title>IBLORDZ | Creative Digital Studio</title>
 
   <style>
+
     :root {
       --black: #111111;
       --dark: #181818;
@@ -33,14 +35,14 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: var(--white);
+      background: #fff;
       color: var(--black);
       line-height: 1.6;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
+      color: inherit;
     }
 
     button {
@@ -51,6 +53,7 @@
       width: min(92%, var(--max));
       margin: auto;
     }
+
 
     /* ================= HEADER ================= */
 
@@ -68,7 +71,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 30px;
     }
 
     .brand {
@@ -78,11 +80,11 @@
     }
 
     .brand-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: var(--black);
-      color: var(--white);
+      width: 43px;
+      height: 43px;
+      border-radius: 13px;
+      background: #111;
+      color: #fff;
       display: grid;
       place-items: center;
       font-size: 14px;
@@ -99,22 +101,21 @@
     .brand-text span {
       display: block;
       font-size: 9px;
-      color: var(--gray);
-      letter-spacing: 1.8px;
-      margin-top: 1px;
+      color: #777;
+      letter-spacing: 1.7px;
     }
 
     nav {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 27px;
     }
 
     nav a {
       font-size: 13px;
       font-weight: 700;
       color: #444;
-      transition: 0.25s;
+      transition: .25s;
     }
 
     nav a:hover {
@@ -122,31 +123,27 @@
     }
 
     .nav-btn {
-      padding: 11px 18px;
+      background: #111;
+      color: #fff !important;
+      padding: 11px 19px;
       border-radius: 999px;
-      background: var(--black);
-      color: white;
     }
 
-    .nav-btn:hover {
-      color: white;
-      opacity: 0.85;
-    }
 
     /* ================= HERO ================= */
 
     .hero {
-      padding: 110px 0 90px;
+      padding: 105px 0 90px;
       background:
-        radial-gradient(circle at 85% 20%, #f2f2f2 0, transparent 30%),
+        radial-gradient(circle at 85% 20%, #f1f1f1 0, transparent 30%),
         radial-gradient(circle at 10% 80%, #f7f7f7 0, transparent 28%),
         #fff;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 70px;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 65px;
       align-items: center;
     }
 
@@ -156,7 +153,7 @@
       gap: 8px;
       padding: 8px 13px;
       background: #f4f4f4;
-      border: 1px solid var(--border);
+      border: 1px solid #e7e7e7;
       border-radius: 999px;
       font-size: 10px;
       font-weight: 900;
@@ -174,22 +171,22 @@
 
     .hero h1 {
       font-size: clamp(45px, 7vw, 82px);
-      line-height: 0.98;
+      line-height: .98;
       letter-spacing: -4px;
-      max-width: 750px;
-      margin-bottom: 28px;
+      margin-bottom: 27px;
     }
 
     .hero h1 span {
+      display: block;
       color: #777;
     }
 
     .hero p {
       max-width: 650px;
+      color: #666;
       font-size: 17px;
-      color: var(--gray);
       line-height: 1.8;
-      margin-bottom: 34px;
+      margin-bottom: 33px;
     }
 
     .hero-actions {
@@ -202,19 +199,17 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
       padding: 14px 21px;
       border-radius: 999px;
-      border: 1px solid var(--black);
       font-size: 13px;
       font-weight: 800;
-      transition: 0.25s;
-      cursor: pointer;
+      border: 1px solid #111;
+      transition: .25s;
     }
 
     .btn-dark {
-      background: var(--black);
-      color: white;
+      background: #111;
+      color: #fff;
     }
 
     .btn-dark:hover {
@@ -223,9 +218,9 @@
     }
 
     .btn-light {
-      background: white;
-      color: black;
-      border-color: var(--border);
+      background: #fff;
+      color: #111;
+      border-color: #ddd;
     }
 
     .btn-light:hover {
@@ -233,12 +228,13 @@
       transform: translateY(-2px);
     }
 
-    /* ================= HERO VIDEO ================= */
+
+    /* ================= VIDEO ================= */
 
     .hero-video {
       background: #111;
+      padding: 9px;
       border-radius: 28px;
-      padding: 10px;
       box-shadow: var(--shadow);
     }
 
@@ -257,7 +253,8 @@
       border: 0;
     }
 
-    /* ================= SECTION ================= */
+
+    /* ================= SECTIONS ================= */
 
     section {
       padding: 100px 0;
@@ -272,95 +269,128 @@
     }
 
     .section-label {
-      color: #777;
       font-size: 10px;
       font-weight: 900;
       letter-spacing: 2px;
       text-transform: uppercase;
+      color: #777;
       margin-bottom: 12px;
     }
 
     .section-head h2 {
-      font-size: clamp(32px, 5vw, 54px);
+      font-size: clamp(33px, 5vw, 54px);
       letter-spacing: -2.5px;
       line-height: 1;
     }
 
     .section-head p {
-      max-width: 430px;
-      color: var(--gray);
+      max-width: 450px;
+      color: #666;
       font-size: 14px;
       line-height: 1.8;
     }
 
+
     /* ================= SERVICES ================= */
 
     #services {
-      background: var(--soft);
+      background: #fafafa;
     }
 
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      gap: 20px;
     }
 
     .service-card {
-      position: relative;
-      min-height: 320px;
-      padding: 30px;
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-radius: 24px;
+      overflow: hidden;
       cursor: pointer;
-      transition: 0.3s ease;
+      transition: .3s ease;
       display: flex;
       flex-direction: column;
-      overflow: hidden;
-    }
-
-    .service-card::after {
-      content: "";
-      position: absolute;
-      width: 120px;
-      height: 120px;
-      right: -60px;
-      bottom: -60px;
-      background: #f5f5f5;
-      border-radius: 50%;
-      transition: 0.3s;
     }
 
     .service-card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-7px);
+      box-shadow: 0 20px 50px rgba(0,0,0,.1);
       border-color: #ccc;
-      box-shadow: var(--shadow);
     }
 
-    .service-card:hover::after {
-      transform: scale(1.4);
+    /* SERVICE IMAGE */
+
+    .service-image {
+      position: relative;
+      height: 205px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .service-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: .5s ease;
+    }
+
+    .service-card:hover .service-image img {
+      transform: scale(1.07);
+    }
+
+    .image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.05)
+      );
     }
 
     .service-number {
-      width: 40px;
-      height: 40px;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 39px;
+      height: 39px;
       display: grid;
       place-items: center;
-      background: #f3f3f3;
+      background: rgba(255,255,255,.92);
       border-radius: 12px;
       font-size: 11px;
       font-weight: 900;
-      margin-bottom: 26px;
     }
 
-    .service-card h3 {
+    .image-title {
+      position: absolute;
+      left: 20px;
+      bottom: 17px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .service-content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .service-content h3 {
       font-size: 21px;
-      letter-spacing: -0.7px;
-      margin-bottom: 12px;
+      letter-spacing: -.7px;
+      margin-bottom: 10px;
     }
 
-    .service-card p {
-      color: var(--gray);
+    .service-content p {
+      color: #666;
       font-size: 13px;
       line-height: 1.75;
       margin-bottom: 20px;
@@ -371,20 +401,18 @@
       flex-wrap: wrap;
       gap: 6px;
       margin-top: auto;
-      padding-top: 18px;
+      padding-top: 17px;
       border-top: 1px solid #eee;
-      position: relative;
-      z-index: 2;
     }
 
     .price-preview span {
-      padding: 7px 10px;
+      padding: 7px 9px;
+      background: #fafafa;
       border: 1px solid #e5e5e5;
       border-radius: 999px;
-      background: #fafafa;
-      color: #666;
       font-size: 10px;
       font-weight: 800;
+      color: #666;
     }
 
     .price-preview strong {
@@ -392,20 +420,17 @@
     }
 
     .service-link {
-      display: block;
       margin-top: 15px;
       font-size: 11px;
       font-weight: 900;
-      letter-spacing: 0.5px;
-      position: relative;
-      z-index: 3;
     }
+
 
     /* ================= YOUTUBE ================= */
 
     .youtube-section {
-      background: var(--black);
-      color: white;
+      background: #111;
+      color: #fff;
     }
 
     .youtube-section .section-label {
@@ -418,13 +443,13 @@
 
     .youtube-box {
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
+      grid-template-columns: .85fr 1.15fr;
       gap: 50px;
       align-items: center;
     }
 
     .youtube-copy h2 {
-      font-size: clamp(34px, 5vw, 60px);
+      font-size: clamp(35px, 5vw, 60px);
       line-height: 1;
       letter-spacing: -3px;
       margin-bottom: 25px;
@@ -432,8 +457,8 @@
 
     .youtube-copy p {
       color: #aaa;
-      line-height: 1.8;
       font-size: 14px;
+      line-height: 1.8;
       margin-bottom: 30px;
     }
 
@@ -443,15 +468,12 @@
       border-radius: 24px;
     }
 
-    .youtube-video .video-frame {
-      border-radius: 18px;
-    }
 
     /* ================= ABOUT ================= */
 
     .about-grid {
       display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-columns: .8fr 1.2fr;
       gap: 80px;
     }
 
@@ -462,7 +484,7 @@
     }
 
     .about-content p {
-      color: var(--gray);
+      color: #666;
       font-size: 15px;
       line-height: 1.9;
       margin-bottom: 22px;
@@ -477,8 +499,8 @@
 
     .stat {
       padding: 22px;
-      background: var(--soft);
-      border: 1px solid var(--border);
+      background: #fafafa;
+      border: 1px solid #e7e7e7;
       border-radius: 17px;
     }
 
@@ -489,21 +511,22 @@
     }
 
     .stat span {
-      color: var(--gray);
+      color: #777;
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
+
     /* ================= CONTACT ================= */
 
     #contact {
-      background: var(--soft);
+      background: #fafafa;
     }
 
     .contact-box {
       background: #111;
-      color: white;
+      color: #fff;
       border-radius: 30px;
       padding: 65px;
       display: flex;
@@ -513,9 +536,9 @@
     }
 
     .contact-box h2 {
-      font-size: clamp(34px, 5vw, 58px);
-      letter-spacing: -3px;
+      font-size: clamp(35px, 5vw, 58px);
       line-height: 1;
+      letter-spacing: -3px;
       margin-bottom: 18px;
     }
 
@@ -527,22 +550,28 @@
     }
 
     .contact-actions {
+      min-width: 190px;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      min-width: 190px;
     }
 
     .contact-actions .btn-light {
-      border: 0;
+      border: none;
     }
+
+    .email-btn {
+      color: #fff;
+      border-color: #444;
+    }
+
 
     /* ================= FOOTER ================= */
 
     footer {
       padding: 35px 0;
-      background: white;
-      border-top: 1px solid var(--border);
+      background: #fff;
+      border-top: 1px solid #e8e8e8;
     }
 
     .footer-inner {
@@ -559,21 +588,22 @@
 
     .socials {
       display: flex;
-      gap: 18px;
       flex-wrap: wrap;
+      gap: 18px;
     }
 
     .socials a {
+      color: #555;
       font-size: 11px;
       font-weight: 800;
-      color: #555;
     }
 
     .socials a:hover {
       color: #000;
     }
 
-    /* ================= WHATSAPP FLOAT ================= */
+
+    /* ================= FLOATING WHATSAPP ================= */
 
     .whatsapp-float {
       position: fixed;
@@ -582,20 +612,21 @@
       width: 58px;
       height: 58px;
       background: #111;
-      color: white;
+      color: #fff;
       border-radius: 50%;
       display: grid;
       place-items: center;
-      z-index: 900;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 900;
-      transition: 0.25s;
+      z-index: 900;
+      box-shadow: 0 10px 35px rgba(0,0,0,.2);
+      transition: .25s;
     }
 
     .whatsapp-float:hover {
       transform: translateY(-4px) scale(1.04);
     }
+
 
     /* ================= MODAL ================= */
 
@@ -603,7 +634,7 @@
       position: fixed;
       inset: 0;
       z-index: 2000;
-      background: rgba(0,0,0,0.72);
+      background: rgba(0,0,0,.75);
       backdrop-filter: blur(8px);
       display: none;
       align-items: center;
@@ -616,21 +647,22 @@
     }
 
     .modal-box {
-      width: min(1050px, 100%);
-      max-height: 90vh;
+      width: min(1080px,100%);
+      max-height: 91vh;
       overflow-y: auto;
-      background: white;
+      background: #fff;
       border-radius: 28px;
-      box-shadow: 0 30px 100px rgba(0,0,0,0.3);
       padding: 35px;
-      animation: modalIn 0.25s ease;
+      box-shadow: 0 30px 100px rgba(0,0,0,.3);
+      animation: modalIn .25s ease;
     }
 
     @keyframes modalIn {
       from {
         opacity: 0;
-        transform: translateY(20px) scale(0.98);
+        transform: translateY(20px) scale(.98);
       }
+
       to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -655,68 +687,66 @@
     }
 
     .modal-header h2 {
-      font-size: clamp(28px, 4vw, 44px);
+      font-size: clamp(28px,4vw,44px);
       letter-spacing: -2px;
       line-height: 1;
     }
 
     .modal-header p {
+      max-width: 700px;
       color: #777;
       font-size: 13px;
+      line-height: 1.7;
       margin-top: 10px;
-      max-width: 650px;
     }
 
     .close-modal {
       width: 42px;
       height: 42px;
-      border-radius: 50%;
-      border: 1px solid var(--border);
-      background: white;
-      cursor: pointer;
-      font-size: 22px;
       flex-shrink: 0;
+      border: 1px solid #ddd;
+      background: #fff;
+      border-radius: 50%;
+      font-size: 22px;
+      cursor: pointer;
     }
 
     .close-modal:hover {
-      background: #f3f3f3;
+      background: #f4f4f4;
     }
+
+
+    /* ================= PACKAGE CARDS ================= */
 
     .pricing-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3,1fr);
       gap: 16px;
     }
 
-    /* CLICKABLE PACKAGE */
-
     .price-card {
       position: relative;
+      min-height: 450px;
       padding: 27px;
-      border: 1px solid var(--border);
+      border: 1px solid #e4e4e4;
       border-radius: 22px;
       background: #fff;
       display: flex;
       flex-direction: column;
-      min-height: 450px;
       cursor: pointer;
-      transition: 0.25s ease;
+      transition: .25s;
     }
 
     .price-card:hover {
       transform: translateY(-5px);
       border-color: #111;
-      box-shadow: 0 18px 45px rgba(0,0,0,0.1);
+      box-shadow: 0 18px 45px rgba(0,0,0,.1);
     }
 
     .price-card.featured {
       background: #111;
-      color: white;
+      color: #fff;
       border-color: #111;
-    }
-
-    .price-card.featured:hover {
-      box-shadow: 0 20px 55px rgba(0,0,0,0.25);
     }
 
     .price-top {
@@ -738,15 +768,15 @@
       font-weight: 900;
       padding: 6px 8px;
       border-radius: 999px;
-      background: white;
+      background: #fff;
       color: #111;
     }
 
     .price {
-      font-size: 38px;
+      font-size: 39px;
+      font-weight: 900;
       line-height: 1;
       letter-spacing: -2px;
-      font-weight: 900;
       margin-bottom: 8px;
     }
 
@@ -756,16 +786,16 @@
       margin-bottom: 24px;
     }
 
-    .price-card.featured .delivery {
+    .featured .delivery {
       color: #aaa;
     }
 
     .includes-title {
       font-size: 10px;
+      font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-weight: 900;
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
 
     .price-card ul {
@@ -776,14 +806,10 @@
     .price-card li {
       position: relative;
       padding-left: 18px;
-      font-size: 11px;
       color: #666;
-      margin-bottom: 9px;
+      font-size: 11px;
       line-height: 1.5;
-    }
-
-    .price-card.featured li {
-      color: #ccc;
+      margin-bottom: 9px;
     }
 
     .price-card li::before {
@@ -794,8 +820,12 @@
       color: #111;
     }
 
-    .price-card.featured li::before {
-      color: white;
+    .featured li {
+      color: #ccc;
+    }
+
+    .featured li::before {
+      color: #fff;
     }
 
     .price-actions {
@@ -808,46 +838,41 @@
     .price-btn {
       width: 100%;
       padding: 13px;
-      border-radius: 999px;
       border: 1px solid #111;
       background: #111;
-      color: white;
+      color: #fff;
+      border-radius: 999px;
       font-size: 11px;
       font-weight: 900;
       cursor: pointer;
-      transition: 0.2s;
+      transition: .2s;
     }
 
     .price-btn:hover {
       background: #333;
     }
 
-    .price-card.featured .price-btn {
-      background: white;
+    .featured .price-btn {
+      background: #fff;
       color: #111;
-      border-color: white;
-    }
-
-    .price-card.featured .price-btn:hover {
-      background: #ddd;
+      border-color: #fff;
     }
 
     .sample-btn {
       width: 100%;
       padding: 11px;
+      border: 1px solid #ddd;
       border-radius: 999px;
-      border: 1px solid var(--border);
-      background: white;
+      background: #fff;
       color: #111;
       font-size: 10px;
       font-weight: 900;
-      cursor: pointer;
       text-align: center;
     }
 
-    .price-card.featured .sample-btn {
+    .featured .sample-btn {
       background: transparent;
-      color: white;
+      color: #fff;
       border-color: #444;
     }
 
@@ -859,14 +884,16 @@
       text-align: center;
       color: #888;
       font-size: 10px;
-      margin-top: 22px;
+      margin-top: 20px;
     }
+
 
     /* ================= RESPONSIVE ================= */
 
-    @media (max-width: 1000px) {
+    @media(max-width:1000px) {
+
       .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
       }
 
       .hero-grid,
@@ -875,27 +902,18 @@
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        padding-top: 75px;
-      }
-
-      .youtube-copy {
-        max-width: 700px;
-      }
-
       .contact-box {
         flex-direction: column;
         align-items: flex-start;
       }
+
     }
 
-    @media (max-width: 760px) {
+
+    @media(max-width:760px) {
+
       nav {
         display: none;
-      }
-
-      .hero h1 {
-        letter-spacing: -2.5px;
       }
 
       section {
@@ -936,19 +954,30 @@
         flex-direction: column;
         align-items: flex-start;
       }
+
     }
 
-    @media (max-width: 480px) {
+
+    @media(max-width:480px) {
+
       .hero {
         padding: 60px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -2.5px;
       }
 
       .hero p {
         font-size: 14px;
       }
 
-      .service-card {
-        padding: 24px;
+      .service-image {
+        height: 190px;
+      }
+
+      .service-content {
+        padding: 22px;
       }
 
       .whatsapp-float {
@@ -957,504 +986,928 @@
         right: 16px;
         bottom: 16px;
       }
+
     }
+
   </style>
 </head>
 
+
 <body>
+
 
   <!-- ================= HEADER ================= -->
 
   <header>
+
     <div class="container nav">
 
       <a href="#home" class="brand">
-        <div class="brand-mark">IB</div>
+
+        <div class="brand-mark">
+          IB
+        </div>
 
         <div class="brand-text">
           <strong>IBLORDZ</strong>
           <span>CREATIVE DIGITAL STUDIO</span>
         </div>
+
       </a>
 
+
       <nav>
+
         <a href="#home">Home</a>
+
         <a href="#services">Services</a>
+
         <a href="#about">About</a>
+
         <a href="#contact">Contact</a>
-        <a href="https://wa.me/2348072749790" target="_blank" class="nav-btn">
+
+        <a
+          href="https://wa.me/2348072749790"
+          target="_blank"
+          class="nav-btn">
           WhatsApp
         </a>
+
       </nav>
 
     </div>
+
   </header>
+
 
 
   <!-- ================= HERO ================= -->
 
-  <main>
+  <section class="hero" id="home">
 
-    <section class="hero" id="home">
-      <div class="container hero-grid">
+    <div class="container hero-grid">
 
-        <div>
 
-          <div class="eyebrow">
-            <span class="eyebrow-dot"></span>
-            Creative Digital Studio
-          </div>
+      <div>
 
-          <h1>
-            Turning Ideas
-            <span>Into Impact.</span>
-          </h1>
-
-          <p>
-            I’m a creative digital professional focused on transforming ideas
-            into engaging content, visual experiences, and innovative digital
-            solutions. I combine creativity, technology, storytelling, and
-            design to help brands, creators, and businesses bring their ideas
-            to life.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#services" class="btn btn-dark">
-              Explore Services →
-            </a>
-
-            <a href="https://wa.me/2348072749790" target="_blank" class="btn btn-light">
-              Start a Project
-            </a>
-          </div>
-
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Creative Digital Studio
         </div>
 
 
-        <div class="hero-video">
+        <h1>
+          Turning Ideas
+          <span>Into Impact.</span>
+        </h1>
 
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/nfLRgbx9Y7Q"
-              title="IBLORDZ Featured Work"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
+
+        <p>
+          I’m a creative digital professional focused on transforming ideas
+          into engaging content, visual experiences, and innovative digital
+          solutions. I combine creativity, technology, storytelling, and design
+          to help brands, creators, and businesses bring their ideas to life.
+        </p>
+
+
+        <div class="hero-actions">
+
+          <a
+            href="#services"
+            class="btn btn-dark">
+            Explore Services →
+          </a>
+
+          <a
+            href="https://wa.me/2348072749790"
+            target="_blank"
+            class="btn btn-light">
+            Start a Project
+          </a>
 
         </div>
 
       </div>
-    </section>
 
 
-    <!-- ================= SERVICES ================= -->
 
-    <section id="services">
+      <div class="hero-video">
 
-      <div class="container">
+        <div class="video-frame">
 
-        <div class="section-head">
+          <iframe
+            src="https://www.youtube.com/embed/nfLRgbx9Y7Q"
+            title="IBLORDZ Creative Work"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
 
-          <div>
-            <div class="section-label">What I Do</div>
-            <h2>Creative Services</h2>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= SERVICES ================= -->
+
+  <section id="services">
+
+    <div class="container">
+
+
+      <div class="section-head">
+
+        <div>
+
+          <div class="section-label">
+            What I Do
           </div>
 
-          <p>
-            Select a service to explore the available packages, pricing,
-            delivery time, and project options.
-          </p>
+          <h2>
+            Creative Services
+          </h2>
 
         </div>
 
 
-        <div class="services-grid">
+        <p>
+          Explore my creative and digital services. Click any service to see
+          the available packages and choose the option that fits your project.
+        </p>
+
+      </div>
 
 
-          <!-- 01 AI CONTENT -->
 
-          <div class="service-card" onclick="openService('ai')">
+      <div class="services-grid">
 
-            <div class="service-number">01</div>
 
-            <h3>AI Content Creation</h3>
+        <!-- ================= 01 AI ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('ai')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=85"
+              alt="AI Content Creation">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              01
+            </div>
+
+            <div class="image-title">
+              AI Content
+            </div>
+
+          </div>
+
+
+          <div class="service-content">
+
+            <h3>
+              AI Content Creation
+            </h3>
 
             <p>
               AI-powered videos, creative visuals, storytelling, AI characters,
               talking objects, talking fruit, AI art and innovative digital content.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$40</strong></span>
-              <span>Standard <strong>$80</strong></span>
-              <span>Premium <strong>$150</strong></span>
+
+              <span>
+                Basic <strong>$40</strong>
+              </span>
+
+              <span>
+                Standard <strong>$80</strong>
+              </span>
+
+              <span>
+                Premium <strong>$150</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
+
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= 02 ANIMATION ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('animation')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?auto=format&fit=crop&w=1000&q=85"
+              alt="Animation">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              02
+            </div>
+
+            <div class="image-title">
+              Animation
+            </div>
 
           </div>
 
 
-          <!-- 02 ANIMATION -->
+          <div class="service-content">
 
-          <div class="service-card" onclick="openService('animation')">
-
-            <div class="service-number">02</div>
-
-            <h3>Animation</h3>
+            <h3>
+              Animation
+            </h3>
 
             <p>
               Character animation, cartoon animation, 3D animation, kids animation,
               animated stories, lip-sync animation and creative visual projects.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$50</strong></span>
-              <span>Standard <strong>$100</strong></span>
-              <span>Premium <strong>$200</strong></span>
+
+              <span>
+                Basic <strong>$50</strong>
+              </span>
+
+              <span>
+                Standard <strong>$100</strong>
+              </span>
+
+              <span>
+                Premium <strong>$200</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
+
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= 03 VIDEO ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('video')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1000&q=85"
+              alt="Video Production and Editing">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              03
+            </div>
+
+            <div class="image-title">
+              Video Production
+            </div>
 
           </div>
 
 
-          <!-- 03 VIDEO -->
+          <div class="service-content">
 
-          <div class="service-card" onclick="openService('video')">
-
-            <div class="service-number">03</div>
-
-            <h3>Video Production & Editing</h3>
+            <h3>
+              Video Production & Editing
+            </h3>
 
             <p>
               Video editing, short-form content, promotional content, cinematic
               videos, music videos, storytelling, lyric content and motion graphics.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$35</strong></span>
-              <span>Standard <strong>$75</strong></span>
-              <span>Premium <strong>$150</strong></span>
+
+              <span>
+                Basic <strong>$35</strong>
+              </span>
+
+              <span>
+                Standard <strong>$75</strong>
+              </span>
+
+              <span>
+                Premium <strong>$150</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
+
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= 04 MUSIC ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('music')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1000&q=85"
+              alt="Music Production">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              04
+            </div>
+
+            <div class="image-title">
+              Music & Visuals
+            </div>
 
           </div>
 
 
-          <!-- 04 MUSIC -->
+          <div class="service-content">
 
-          <div class="service-card" onclick="openService('music')">
-
-            <div class="service-number">04</div>
-
-            <h3>Music & Visuals</h3>
+            <h3>
+              Music & Visuals
+            </h3>
 
             <p>
               Music production, composition, arrangement, orchestral music,
               music visuals, lyric content, cinematic scenes and music production.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$50</strong></span>
-              <span>Standard <strong>$100</strong></span>
-              <span>Premium <strong>$200</strong></span>
+
+              <span>
+                Basic <strong>$50</strong>
+              </span>
+
+              <span>
+                Standard <strong>$100</strong>
+              </span>
+
+              <span>
+                Premium <strong>$200</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
+
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= 05 DESIGN ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('design')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1000&q=85"
+              alt="Creative Design">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              05
+            </div>
+
+            <div class="image-title">
+              Creative Design
+            </div>
 
           </div>
 
 
-          <!-- 05 DESIGN -->
+          <div class="service-content">
 
-          <div class="service-card" onclick="openService('design')">
-
-            <div class="service-number">05</div>
-
-            <h3>Creative Design</h3>
+            <h3>
+              Creative Design
+            </h3>
 
             <p>
               Creative graphics, branding visuals, thumbnails, promotional designs,
               digital assets and visual content designed to help brands stand out.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$30</strong></span>
-              <span>Standard <strong>$60</strong></span>
-              <span>Premium <strong>$120</strong></span>
+
+              <span>
+                Basic <strong>$30</strong>
+              </span>
+
+              <span>
+                Standard <strong>$60</strong>
+              </span>
+
+              <span>
+                Premium <strong>$120</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
+
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= 06 SOCIAL ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('social')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=85"
+              alt="Social Media Content">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              06
+            </div>
+
+            <div class="image-title">
+              Social Media
+            </div>
 
           </div>
 
 
-          <!-- 06 SOCIAL -->
+          <div class="service-content">
 
-          <div class="service-card" onclick="openService('social')">
-
-            <div class="service-number">06</div>
-
-            <h3>Social Media Content</h3>
+            <h3>
+              Social Media Content
+            </h3>
 
             <p>
               TikTok videos, Instagram Reels, YouTube Shorts, promotional content,
               social media creatives and engaging short-form content.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$30</strong></span>
-              <span>Standard <strong>$70</strong></span>
-              <span>Premium <strong>$130</strong></span>
+
+              <span>
+                Basic <strong>$30</strong>
+              </span>
+
+              <span>
+                Standard <strong>$70</strong>
+              </span>
+
+              <span>
+                Premium <strong>$130</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
+
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= 07 YOUTUBE ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('youtube')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1000&q=85"
+              alt="YouTube Expert">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              07
+            </div>
+
+            <div class="image-title">
+              YouTube Expert
+            </div>
 
           </div>
 
 
-          <!-- 07 YOUTUBE -->
+          <div class="service-content">
 
-          <div class="service-card" onclick="openService('youtube')">
-
-            <div class="service-number">07</div>
-
-            <h3>YouTube Expert</h3>
+            <h3>
+              YouTube Expert
+            </h3>
 
             <p>
               YouTube channel development, content strategy, optimization,
               thumbnails, titles, descriptions, Shorts and audience-focused content.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$50</strong></span>
-              <span>Standard <strong>$120</strong></span>
-              <span>Premium <strong>$250</strong></span>
+
+              <span>
+                Basic <strong>$50</strong>
+              </span>
+
+              <span>
+                Standard <strong>$120</strong>
+              </span>
+
+              <span>
+                Premium <strong>$250</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
+
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= 08 WEBSITE ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('website')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1000&q=85"
+              alt="Website Development">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              08
+            </div>
+
+            <div class="image-title">
+              Digital Solutions
+            </div>
 
           </div>
 
 
-          <!-- 08 WEBSITE -->
+          <div class="service-content">
 
-          <div class="service-card" onclick="openService('website')">
-
-            <div class="service-number">08</div>
-
-            <h3>Website & Digital Solutions</h3>
+            <h3>
+              Website & Digital Solutions
+            </h3>
 
             <p>
               Website design and development, WordPress, Shopify, landing pages,
               creative websites and technology-driven digital experiences.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$100</strong></span>
-              <span>Standard <strong>$250</strong></span>
-              <span>Premium <strong>$500</strong></span>
+
+              <span>
+                Basic <strong>$100</strong>
+              </span>
+
+              <span>
+                Standard <strong>$250</strong>
+              </span>
+
+              <span>
+                Premium <strong>$500</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
+
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= 09 STRATEGY ================= -->
+
+        <div
+          class="service-card"
+          onclick="openService('strategy')">
+
+          <div class="service-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=85"
+              alt="Digital Strategy">
+
+            <div class="image-overlay"></div>
+
+            <div class="service-number">
+              09
+            </div>
+
+            <div class="image-title">
+              Digital Strategy
+            </div>
 
           </div>
 
 
-          <!-- 09 STRATEGY -->
+          <div class="service-content">
 
-          <div class="service-card" onclick="openService('strategy')">
-
-            <div class="service-number">09</div>
-
-            <h3>Content & Digital Strategy</h3>
+            <h3>
+              Content & Digital Strategy
+            </h3>
 
             <p>
               Content planning, creative direction, storytelling, digital strategy,
               brand-focused media and audience-focused recommendations.
             </p>
 
+
             <div class="price-preview">
-              <span>Basic <strong>$40</strong></span>
-              <span>Standard <strong>$80</strong></span>
-              <span>Premium <strong>$150</strong></span>
+
+              <span>
+                Basic <strong>$40</strong>
+              </span>
+
+              <span>
+                Standard <strong>$80</strong>
+              </span>
+
+              <span>
+                Premium <strong>$150</strong>
+              </span>
+
             </div>
 
-            <span class="service-link">View Packages →</span>
 
+            <span class="service-link">
+              View Packages →
+            </span>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= YOUTUBE ================= -->
+
+  <section class="youtube-section">
+
+    <div class="container youtube-box">
+
+
+      <div class="youtube-copy">
+
+        <div class="section-label">
+          YouTube Specialist
+        </div>
+
+        <h2>
+          Build Better.
+          Grow Smarter.
+        </h2>
+
+        <p>
+          From content planning and editing to SEO optimization, thumbnails,
+          Shorts strategy and channel direction, I help creators and brands
+          develop professional YouTube content around their goals.
+        </p>
+
+        <a
+          href="#services"
+          class="btn btn-light">
+          View YouTube Packages →
+        </a>
+
+      </div>
+
+
+      <div class="youtube-video">
+
+        <div class="video-frame">
+
+          <iframe
+            src="https://www.youtube.com/embed/nfLRgbx9Y7Q"
+            title="IBLORDZ YouTube Work"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about">
+
+    <div class="container about-grid">
+
+
+      <div class="about-title">
+
+        <div class="section-label">
+          About IBLORDZ
+        </div>
+
+        <h2>
+          Creativity
+          With Purpose.
+        </h2>
+
+      </div>
+
+
+      <div class="about-content">
+
+        <p>
+          I’m a creative digital professional focused on transforming ideas
+          into engaging content, visual experiences, and innovative digital
+          solutions. I combine creativity, technology, storytelling, and design
+          to help brands, creators, and businesses bring their ideas to life.
+        </p>
+
+
+        <p>
+          I’m passionate about creating work that is creative, professional,
+          engaging, and purposeful. Whether you need content, animation, music,
+          design, YouTube support, or a complete digital solution, I’m ready
+          to bring your vision to life.
+        </p>
+
+
+        <p>
+          Let’s create something remarkable together.
+        </p>
+
+
+        <div class="stats">
+
+          <div class="stat">
+            <strong>MANY</strong>
+            <span>Years Experience</span>
+          </div>
+
+          <div class="stat">
+            <strong>9+</strong>
+            <span>Creative Services</span>
+          </div>
+
+          <div class="stat">
+            <strong>∞</strong>
+            <span>Creative Possibilities</span>
           </div>
 
         </div>
 
       </div>
 
-    </section>
+    </div>
+
+  </section>
 
 
-    <!-- ================= YOUTUBE EXPERT ================= -->
 
-    <section class="youtube-section">
+  <!-- ================= CONTACT ================= -->
 
-      <div class="container youtube-box">
+  <section id="contact">
 
-        <div class="youtube-copy">
+    <div class="container">
 
-          <div class="section-label">YouTube Specialist</div>
+      <div class="contact-box">
+
+
+        <div>
+
+          <div class="section-label">
+            Let's Work Together
+          </div>
 
           <h2>
-            Build Better.
-            Grow Smarter.
+            Have An Idea?
+            Let's Create It.
           </h2>
 
           <p>
-            From content planning and editing to SEO optimization, thumbnails,
-            Shorts strategy and channel direction, I help creators and brands
-            develop professional YouTube content designed around their goals.
+            Tell me what you're working on and what you need. I'll help you
+            choose the right service and package for your project.
           </p>
 
-          <a href="#services" class="btn btn-light">
-            View YouTube Packages →
+        </div>
+
+
+        <div class="contact-actions">
+
+          <a
+            href="https://wa.me/2348072749790"
+            target="_blank"
+            class="btn btn-light">
+            WhatsApp Me →
+          </a>
+
+          <a
+            href="mailto:iamiblordz@gmail.com"
+            class="btn email-btn">
+            Email Me
           </a>
 
         </div>
 
 
-        <div class="youtube-video">
-
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/nfLRgbx9Y7Q"
-              title="IBLORDZ YouTube Work"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
-          </div>
-
-        </div>
-
       </div>
 
-    </section>
+    </div>
 
+  </section>
 
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about">
-
-      <div class="container about-grid">
-
-        <div class="about-title">
-
-          <div class="section-label">About IBLORDZ</div>
-
-          <h2>
-            Creativity With
-            Purpose.
-          </h2>
-
-        </div>
-
-
-        <div class="about-content">
-
-          <p>
-            I’m a creative digital professional focused on transforming ideas
-            into engaging content, visual experiences, and innovative digital
-            solutions. I combine creativity, technology, storytelling, and design
-            to help brands, creators, and businesses bring their ideas to life.
-          </p>
-
-          <p>
-            I’m passionate about creating work that is creative, professional,
-            engaging, and purposeful. Whether you need content, animation, music,
-            design, YouTube support, or a complete digital solution, I’m ready
-            to bring your vision to life.
-          </p>
-
-          <p>
-            Let’s create something remarkable together.
-          </p>
-
-
-          <div class="stats">
-
-            <div class="stat">
-              <strong>MANY</strong>
-              <span>Years Experience</span>
-            </div>
-
-            <div class="stat">
-              <strong>9+</strong>
-              <span>Creative Services</span>
-            </div>
-
-            <div class="stat">
-              <strong>∞</strong>
-              <span>Creative Possibilities</span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section id="contact">
-
-      <div class="container">
-
-        <div class="contact-box">
-
-          <div>
-
-            <div class="section-label">Let's Work Together</div>
-
-            <h2>
-              Have An Idea?
-              Let's Create It.
-            </h2>
-
-            <p>
-              Tell me what you're working on and what you need. I'll help you
-              choose the right service and package for your project.
-            </p>
-
-          </div>
-
-
-          <div class="contact-actions">
-
-            <a
-              href="https://wa.me/2348072749790"
-              target="_blank"
-              class="btn btn-light">
-              WhatsApp Me →
-            </a>
-
-            <a
-              href="mailto:iamiblordz@gmail.com"
-              class="btn"
-              style="color:white;border-color:#444;">
-              Email Me
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
 
 
   <!-- ================= FOOTER ================= -->
@@ -1463,17 +1916,23 @@
 
     <div class="container footer-inner">
 
+
       <div class="copyright">
         © 2026 IBLORDZ. All rights reserved.
       </div>
 
+
       <div class="socials">
 
-        <a href="https://www.instagram.com/iblordzbuz" target="_blank">
+        <a
+          href="https://www.instagram.com/iblordzbuz"
+          target="_blank">
           Instagram
         </a>
 
-        <a href="https://www.tiktok.com/@iblordzbuz" target="_blank">
+        <a
+          href="https://www.tiktok.com/@iblordzbuz"
+          target="_blank">
           TikTok
         </a>
 
@@ -1495,9 +1954,11 @@
 
       </div>
 
+
     </div>
 
   </footer>
+
 
 
   <!-- ================= FLOATING WHATSAPP ================= -->
@@ -1506,43 +1967,66 @@
     href="https://wa.me/2348072749790"
     target="_blank"
     class="whatsapp-float"
-    aria-label="Chat on WhatsApp">
+    aria-label="WhatsApp">
     WA
   </a>
 
 
+
   <!-- ================= PRICING MODAL ================= -->
 
-  <div class="modal" id="pricingModal">
+  <div
+    class="modal"
+    id="pricingModal">
+
 
     <div class="modal-box">
+
 
       <div class="modal-header">
 
         <div>
-          <div class="modal-label">Choose Your Package</div>
-          <h2 id="modalTitle">Service Packages</h2>
+
+          <div class="modal-label">
+            Select Your Package
+          </div>
+
+          <h2 id="modalTitle">
+            Service Packages
+          </h2>
+
           <p id="modalDescription">
-            Select a package below to continue on WhatsApp.
+            Choose the package that best fits your project.
           </p>
+
         </div>
 
-        <button class="close-modal" onclick="closeModal()" aria-label="Close">
+
+        <button
+          class="close-modal"
+          onclick="closeModal()"
+          aria-label="Close">
           ×
         </button>
 
       </div>
 
 
-      <div class="pricing-grid" id="pricingGrid"></div>
+      <div
+        class="pricing-grid"
+        id="pricingGrid">
+      </div>
+
 
       <div class="click-note">
         Click your preferred package to continue directly to WhatsApp.
       </div>
 
+
     </div>
 
   </div>
+
 
 
   <!-- ================= JAVASCRIPT ================= -->
@@ -1554,8 +2038,13 @@
 
     const services = {
 
+
+      /* ================= AI ================= */
+
       ai: {
+
         title: "AI Content Creation",
+
         description:
           "AI-powered videos, creative visuals, storytelling, AI characters, talking objects, talking fruit, AI art and innovative digital content.",
 
@@ -1604,11 +2093,16 @@
 
         sample:
           "https://drive.google.com/file/d/1kdAIZOvxdOzMQ2A6t1a9K94hZWsouDln/view?usp=drive_link"
+
       },
 
 
+      /* ================= ANIMATION ================= */
+
       animation: {
+
         title: "Animation",
+
         description:
           "Character animation, cartoon animation, 3D animation, kids animation, animated stories, lip-sync animation and creative visual projects.",
 
@@ -1657,11 +2151,16 @@
 
         sample:
           "https://drive.google.com/file/d/1XC0PjJA6wY2gBMqFWz_3xgC_05eWEI3d/view?usp=sharing"
+
       },
 
 
+      /* ================= VIDEO ================= */
+
       video: {
+
         title: "Video Production & Editing",
+
         description:
           "Professional video editing, short-form content, promotional content, cinematic videos, music videos, storytelling, lyric content and motion graphics.",
 
@@ -1713,11 +2212,16 @@
 
         sample:
           "https://drive.google.com/file/d/1ZiHkF4JsgVM54LgyfSeFyTaQfQ0qfRbW/view?usp=drive_link"
+
       },
 
 
+      /* ================= MUSIC ================= */
+
       music: {
+
         title: "Music & Visuals",
+
         description:
           "Music production, composition, arrangement, orchestral music, music visuals, lyric content, cinematic scenes and music production.",
 
@@ -1763,11 +2267,16 @@
 
         sample:
           "https://drive.google.com/file/d/1ma07HBC6Ha_dV2w3hXbBulik6A_7s8dx/view?usp=sharing"
+
       },
 
 
+      /* ================= DESIGN ================= */
+
       design: {
+
         title: "Creative Design",
+
         description:
           "Creative graphics, branding visuals, thumbnails, promotional designs, digital assets and visual content designed to help brands stand out.",
 
@@ -1811,11 +2320,16 @@
 
         sample:
           "https://drive.google.com/file/d/1FCj-d0h5izmmScgNd-jFS8Q2n_YNEdMM/view?usp=sharing"
+
       },
 
 
+      /* ================= SOCIAL ================= */
+
       social: {
+
         title: "Social Media Content",
+
         description:
           "TikTok videos, Instagram Reels, YouTube Shorts, promotional content, social media creatives and engaging short-form content.",
 
@@ -1864,11 +2378,16 @@
 
         sample:
           "https://drive.google.com/file/d/10QoQTO_9l1qMoLau4Y3eToVL95vexfRF/view?usp=sharing"
+
       },
 
 
+      /* ================= YOUTUBE ================= */
+
       youtube: {
+
         title: "YouTube Expert",
+
         description:
           "YouTube channel development, content strategy, optimization, thumbnails, titles, descriptions, Shorts and audience-focused content.",
 
@@ -1918,11 +2437,16 @@
 
         sample:
           "https://drive.google.com/file/d/1A8NNFarm1JfRHFvRoqzTkazsQmgCi2lC/view?usp=sharing"
+
       },
 
 
+      /* ================= WEBSITE ================= */
+
       website: {
+
         title: "Website & Digital Solutions",
+
         description:
           "Website design and development, WordPress, Shopify, landing pages, creative websites and technology-driven digital experiences.",
 
@@ -1969,11 +2493,16 @@
 
         sample:
           "https://drive.google.com/file/d/1E4o5k7-RjehZox20VOi4e2XXAuS5GKN7/view?usp=sharing"
+
       },
 
 
+      /* ================= STRATEGY ================= */
+
       strategy: {
+
         title: "Content & Digital Strategy",
+
         description:
           "Content planning, creative direction, storytelling, digital strategy, brand-focused media and audience-focused recommendations.",
 
@@ -2017,9 +2546,11 @@
 
         sample:
           "https://drive.google.com/file/d/1WvzXcBMX8gA3srVcZdw3z9jIiZcF2geA/view?usp=sharing"
+
       }
 
     };
+
 
 
     /* ================= OPEN SERVICE ================= */
@@ -2030,25 +2561,36 @@
 
       if (!service) return;
 
-      document.getElementById("modalTitle").textContent = service.title;
+
+      document.getElementById("modalTitle").textContent =
+        service.title;
+
 
       document.getElementById("modalDescription").textContent =
         service.description +
         " Select a package below to continue.";
 
-      const grid = document.getElementById("pricingGrid");
+
+      const grid =
+        document.getElementById("pricingGrid");
+
 
       grid.innerHTML = "";
 
 
-      const packageNames = Object.keys(service.packages);
+      const packageNames =
+        Object.keys(service.packages);
 
 
-      packageNames.forEach((packageName, index) => {
+      packageNames.forEach((packageName,index) => {
 
-        const pkg = service.packages[packageName];
+        const pkg =
+          service.packages[packageName];
 
-        const card = document.createElement("div");
+
+        const card =
+          document.createElement("div");
+
 
         card.className =
           "price-card" +
@@ -2061,9 +2603,10 @@
             : "";
 
 
-        const itemsHTML = pkg.items
-          .map(item => `<li>${item}</li>`)
-          .join("");
+        const itemsHTML =
+          pkg.items
+            .map(item => `<li>${item}</li>`)
+            .join("");
 
 
         card.innerHTML = `
@@ -2103,17 +2646,21 @@
 
             <button
               class="price-btn"
-              onclick="event.stopPropagation(); choosePackage('${service.title}', '${packageName}', '${pkg.price}')">
+              onclick="event.stopPropagation(); choosePackage('${service.title}','${packageName}','${pkg.price}')">
+
               Choose ${packageName} →
+
             </button>
 
 
             <a
-              class="sample-btn"
               href="${service.sample}"
               target="_blank"
+              class="sample-btn"
               onclick="event.stopPropagation();">
+
               View Sample
+
             </a>
 
           </div>
@@ -2121,9 +2668,7 @@
         `;
 
 
-        /* CLICK ENTIRE PACKAGE CARD */
-
-        card.addEventListener("click", function() {
+        card.addEventListener("click",function() {
 
           choosePackage(
             service.title,
@@ -2149,7 +2694,8 @@
     }
 
 
-    /* ================= CHOOSE PACKAGE ================= */
+
+    /* ================= WHATSAPP ================= */
 
     function choosePackage(
       serviceTitle,
@@ -2160,12 +2706,17 @@
       const message =
         `Hello IBLORDZ, I'm interested in the ${serviceTitle} - ${packageName} Package (${price}). I'd like to discuss the project details.`;
 
-      const url =
+      const whatsappURL =
         `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
-      window.open(url, "_blank");
+
+      window.open(
+        whatsappURL,
+        "_blank"
+      );
 
     }
+
 
 
     /* ================= CLOSE MODAL ================= */
@@ -2181,30 +2732,33 @@
     }
 
 
-    /* ================= CLICK OUTSIDE ================= */
+
+    /* ================= OUTSIDE CLICK ================= */
 
     document
       .getElementById("pricingModal")
-      .addEventListener("click", function(event) {
+      .addEventListener("click",function(event) {
 
-        if (event.target === this) {
+        if(event.target === this) {
           closeModal();
         }
 
       });
 
 
+
     /* ================= ESC KEY ================= */
 
-    document.addEventListener("keydown", function(event) {
+    document.addEventListener("keydown",function(event) {
 
-      if (event.key === "Escape") {
+      if(event.key === "Escape") {
         closeModal();
       }
 
     });
 
   </script>
+
 
 </body>
 </html>
